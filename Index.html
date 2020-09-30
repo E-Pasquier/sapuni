@@ -9,23 +9,34 @@
 
   <header>
     <nav>
-      <div class="">
-        <img src="" alt="" />
+
+      <!-- menu burger -->
+
+      <div id="menuBar">
+        <img src="img/LOGO1-SAPUNI.png" class="logo" alt="Logo" />
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul id="navMenu" class="menu-header">
+            <li><a class="colorWhite" href="Index.html">Home</a></li>
+            <li><a class="colorWhite" href="Articles.html">Articles</a></li>
+            <li><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
+            <li><a class="colorWhite" href="Contact.html">Contact</a></li>
+          </ul>
       </div>
-      <ul class="menu-header">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="article.html">Articles</a></li>
-        <li><a href="auteurs.html">Auteurs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
     </nav>
   </header>
+
+
 
   <body>
     
     <!-- carousel -->
     <div class="">
-      <img src="" alt=""/>
+      <img src="banner-index.jpg" alt="scientologie"/>
     </div>
     <h1>SAPUNI : Société de l'Amour Platonique Universel et Inter-espèces.</h1>
     <p>
@@ -41,49 +52,58 @@
       Vif d'esprit, Gégé se rendit compte que chacun de ses rêves cachait un indice.</br> 
       Après des longs mois de recherches, il en déduit qu'il s'agissait de coordonnées GPS. </br> 
       Ces dernières le menèrent à un temple gigantesque, perdu au fond de jungle amazonienne...</br> 
-      Après de nombreuses et périlleuses explorations il fit la découverte de notre divinité absolue : Geo le Pinchat. </br> 
+      Après de nombreuses et périlleuses explorations il fit la découverte de notre divinité absolue : Geo le Pinchat, profesionnel avéré de GitHub et Linux.. </br> 
       Euréka ! Gégé découvra ainsi la réponse à l'universelle souffrance qui nous accable : s'aimer de façon platonique, universel et inter-espèces.</br> 
       Comnunier et ne faire qu'un : c'est aussi le choix de vie de nos précieux fidèles tant sur le plan spirituel que financier (les pépétes, les pépétes ! C'est pour Gégé).
     </p>
-    <section
-
-      <!--
-      <h2> Qui sommes-nous ?</h2>
-      <div class="">
-        <p></p>
-      </div> -->
+    <section>
+      <h2 class="displayNone"> Qui sommes-nous ?</h2>
+  
       <!-- section avec les cartes des personalités -->
 
-      <div class="">
-        <div class="card">
-          <img src="" alt="">
+      <div class="cards">
+        <div class="cardGg">
+          <img src="" alt="Gérard Bouchard">
           <h3><span>Gérard Bouchard,</span> Le Gourou</h3> 
-          <button></button>
+          <button class="displayNone"></button>
         </div>
-        <div class="card">
-          <img src="" alt="">
-          <h3><span>Geo-Pinchat,</span> La divinité</h3>
-          <button></button>
+        <div class="cardGeo">
+          <img src="" alt="Géo-Pinchat">
+          <h3><span>Geo-Pinchat,</span> La Divinité</h3>
+          <button class="displayNone"></button>
         </div> 
-        <div class="card">
-          <img src="" alt="">
-          <h3><span>DJ Raoul,</span></h3>
-          <button></button>
+
+
+        <div class="cardRaoult">
+          <div class="cardImage">
+            <img src="img/DjRaoult.jpg" alt="DJ Raoul"/>
+          </div>
+          <div class="cardBody"> 
+            <div class="cardTitle"> 
+              <h3>DJ Raoult</h3> 
+            </div>
+            <div class="cardExcerpt"> 
+            <p>Le Barde</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="" alt="">
+        <button class="displayNone"></button>
+
+
+        <div class="cardForent">
+          <img src="img/FlorentPanini.jpg" alt="Florent Panini">
           <h3><span>Florent Panini,</span> Grand Barde</h3> 
-          <button></button>
+          <button class="displayNone"></button>
         </div>
-        <div class="card">
-          <img src="" alt="">
+        <div class="cardTomme">
+          <img src="img/TommeCrouze.jpg" alt="Tomme Crouse">
           <h3><span>Tomme Crouse,</span> Généreux donateur</h3>
-          <button></button>
+          <button class="displayNone"></button>
         </div> 
-        <div class="card">
-          <img src="" alt="">
+        <div class="cardTravolta">
+          <img src="img/DjohnTravoltaOld.jpg" alt="Djohn Travolta">
           <h3><span>Djohn Travolta,</span> Généreux donateur</h3>
-          <button></button>
+          <button class="displayNone"></button>
         </div>
       </div>
 
@@ -91,48 +111,72 @@
 
     <section>
 
-      <!-- les derniers articles -->
-      <!--
-      <h2>Nos derniers articles</h2>
-      -->
 
-      <div class="">
-        <div class="">
-          <img class="" alt="" />
+      <h2 class="displayNone"> Nos derniers articles</h2>
+
+      <div class="derniersArticles">
+        <div class="article1">
+          <h3>Reportage : nous avons rencontré Djohn Travolta et Tomme crouse.</h3>
+          <img src= img/BANNER-ARTICLE.jpg alt="banner-article1"/>
+          <p>
+          La semaine dernière, lors de notre visite du centre, nous avons eu le privilège de rencontrer Djohn Travolta et Tomme Crouse. </br>  
+          <div class="displayNone">
+          Ces deux personnalités sont parmi les fidèles et les plus investis la communauté SAPUNI. 
+          Nous avons profité de ce moment intime pour leur poser quelques questions dont en voici un extrait...
+          </p>
         </div>
-        <p></p>
-        <button></button>
-      </div>
-      <div class="">
-        <div class="">
-          <img class="" alt="" />
+        <button href="ArticleX.html">Lire l'article</button>
+      <div class="displayNone">
+        <div class="article2">
         </div>
-        <p></p>
-        <button></button>
-      </div>
-    
+        <button>Lire l'article</button>
+      </div> 
+
     </section>
-    <!--
-    <h2>Nous rejoindre</h2>
-    -->
+
+  
+    <h2 class=displayNone>Nous rejoindre</h2>
+
 
     <section class=inscriptionButton>
-      <button>ALLEZ, VIENS...</button>
+      <button>ALLEZ, VIENS... ON EST BIEN !</button>
     </section>
+
+    <script src="Script.js"></script>
 
   </body>
 
   <footer>
-    <div class="lienFooter">
-      <a href="contact.html">Contact</a>
-      <a href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
-      <a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte Données Personnelles</a>
+    <!-- WORK IN PREGRESS DO NOT TOUCHER A RIEN-->
+    <div >
+      <ul class="lienfooter">
+      <a class="colorWhite" href="Contact.html">Contact</a>
+      <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
+      <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte Données Personnelles</a>
+    </ul>
     </div>
-    <div class="logoSociaux">
-      <a href="https//:www.twitter.fr" class="twitter"><img src="" alt="twitter" /></a>
-      <a href="https//:www.facebook.fr" class="facebook"><img src="" alt="facebook" /></a>
-      <a href="https//:www.instagram.fr" class="instagram"><img src="" alt="instagram" /></a>
-      <a href="https://www.leetchi.com/c/boiremangeraimer" class="leetchi"><img src="" alt="leetchi" /></a>
+    <div class="liensociaux">
+      <a href="https//:www.twitter.fr" ><img 
+         class="icone"
+         src="https://i.goopics.net/GEZla.png"
+         alt="twitter" 
+         /></a>
+      <a href="https//:www.facebook.fr" ><img 
+        class="icone"
+        src="https://i.goopics.net/N1gjP.png" 
+        alt="facebook" 
+        /></a>
+      <a href="https//:www.instagram.fr" ><img
+         class="icone" 
+         src="https://i.goopics.net/wPlGY.png" 
+         alt="instagram" 
+         /></a>
+      <a href="https://www.leetchi.com/c/boiremangeraimer"><img 
+        src="" 
+        class="icone"  
+        alt="leetchi" 
+        /></a>
     </div>
+  </ul>
   </footer>
 </html>
