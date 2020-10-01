@@ -343,6 +343,7 @@ input[type="submit"] {
 .menu-header li {
   list-style: none;
   padding: 16px 0;
+  font-size: 1.5rem;
 }
 
 .menu-header {
@@ -353,7 +354,7 @@ input[type="submit"] {
 }
 
 .menu-header li a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .change #bar1 {
@@ -435,3 +436,36 @@ footer {
   align-content: space-between;
 }
 
+
+.colorWhite {
+  font-size: 0.8em;
+}
+
+/* media queries responsive étou */
+
+@media screen and (min-width: 768px) { /*768px taille standard pour les desktop */
+  #menu {
+    display: none;
+  }
+  .menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .linkMenu {
+    display: flex;
+    margin-right: 3rem;
+    font-size: 4rem;
+  }
+
+  .logo {
+    float: left;
+    margin-left: 1rem;
+  }
+
+  .displayNone {
+    display: block;
+  }
+}
