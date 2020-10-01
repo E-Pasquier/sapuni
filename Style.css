@@ -394,34 +394,46 @@ footer {
   background-color: #2b4570;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
-.block {
+ul.block {
   display: flex;
-  
   list-style: none;
   padding: 0;
   align-items: center;
   align-content: center;
+  width:100%;
+  justify-content: flex-end;
+  
+}
+.liensociaux{
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+  
 }
 
 .liste {
   margin: 10px;
   color: ghostwhite;
+  width: 80px;
 }
 
 .icone {
+  
   height: auto;
   width: 50%;
 }
 
 .lienfooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
 }
 
 .listeliens {
