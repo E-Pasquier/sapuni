@@ -463,29 +463,28 @@ body *{
 }
 
 .blockIndex{
-  padding: 0;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
-  
-  
-  
-  
 }
 
 .listIndex{
   list-style: none;
   width: 80%;
   text-align: center;
-  margin: auto;
- 
-                    
-                    
+  margin: auto;                
 }
 
 /*------------- (First n second title/paragraph on Index)-----------*/
 
+/*------------- (BANNER CHATPINGOUIN)-----------*/
+.chatpingouin{
+  width: 100%;
+}
+
+/*------------- (BANNER CHATPINGOUIN)-----------*/
 
 /*------------- (order selection button on articles page)-----------*/
 .selectbutton{
@@ -496,6 +495,8 @@ body *{
 }
 
 /*------------- (order selection button on articles page)-----------*/
+
+
 
 /*------------- (Title on Banner articles page)-----------*/ 
 ul.banner-articles{
