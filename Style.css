@@ -103,7 +103,7 @@ section {
 }
 body {
   line-height: 1;
-}
+}ouvrir lien nouvelle fenetre html
 ol,
 ul {
   list-style: none;
@@ -236,6 +236,24 @@ span {
 .cardImage {
   width: 12.5rem;
   border-radius: 3%;
+}
+
+.citation {
+  font-style: oblique;
+  text-align: center;
+}
+
+hr {
+  width: 25%;
+  color: #d5b544;
+}
+
+.article p:first-of-type {
+  font-style: "Montserrat-Bold";
+}
+
+.article h1 {
+  text-align: center;
 }
 
 .article1 {
