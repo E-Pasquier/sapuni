@@ -146,6 +146,8 @@ body {
   flex-direction: column;
   color: #535150;
   font-family: "Montserrat";
+  margin-left: 7em;
+  margin-right: 7em;
 }
 
 h1,
@@ -168,6 +170,16 @@ header {
   font-family: "Ailerons";
 }
 
+header h1 {
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .displayNone {
   display: none;
 }
@@ -180,21 +192,39 @@ a {
   color: white;
 }
 
-img.logo {
+.logo {
   width: 5%;
   height: 5%;
-  margin-left: 50px;
-  display: inline-block;
+  float: left;
+  margin-left: 50%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
   font-family: "Montserrat";
+  text-align: justify;
 }
 
-.cardRaoult {
-  width: 25rem;
+span {
+  font-family: "Montserrat-Bold";
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 12.5rem;
   background-color: white;
   box-shadow: 0.313rem 0.125rem 0.125rem #2b4570;
+  border-radius: 3%;
+  display: flex;
+  margin: 2rem;
+  border: 4px solid #d5b544;
 }
 
 .cardTitle,
@@ -204,7 +234,46 @@ p {
 }
 
 .cardImage {
-  width: 25rem;
+  width: 12.5rem;
+  border-radius: 3%;
+}
+
+.article1 {
+  text-align: center;
+  width: 35rem;
+}
+
+.bannerArticle {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form */
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+input,
+textarea,
+select {
+  padding: 3px;
+  border: 1px solid #a8d0db;
+  border-radius: 5px;
+  width: 80%;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  width: 100px;
+  margin-left: 5px;
+  box-shadow: 1px 1px 1px #a8d0db;
+  cursor: pointer;
 }
 
 /* MENU BURGER !! */
@@ -212,8 +281,8 @@ p {
 #menu {
   width: 35px;
   height: 30px;
-  margin-top: 1.2rem;
-  margin-right: 1.5rem;
+  padding-top: 1.3rem;
+  padding-right: 1.5rem;
   cursor: pointer;
   float: right;
 }
