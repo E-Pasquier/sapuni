@@ -146,6 +146,8 @@ body {
   flex-direction: column;
   color: #535150;
   font-family: "Montserrat";
+  margin-left: 7em;
+  margin-right: 7em;
 }
 
 h1, 
@@ -200,6 +202,11 @@ a {
 
 p {
   font-family: "Montserrat";
+  text-align: justify;
+}
+
+span {
+  font-family: "Montserrat-Bold";
 }
 
 .cards {
@@ -234,6 +241,38 @@ p {
   text-align: center;
   width: 35rem;
 }
+
+.bannerArticle {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form */
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  }
+
+
+ input, textarea, select {
+  padding:3px;
+  border:1px solid #a8d0db;
+  border-radius:5px;
+  width:80%;
+  display: inline-block;
+  }
+
+ input[type=submit], {
+  width:100px;
+  margin-left:5px;
+  box-shadow:1px 1px 1px #a8d0db;
+  cursor:pointer;
+  }
 
 /* MENU BURGER !! */
 
