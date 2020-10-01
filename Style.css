@@ -412,8 +412,10 @@ footer {
 }
 
 .icone {
-  height: auto;
-  width: 50%;
+  /* height: auto;*/
+  width: 1rem;
+  height: 1rem;
+  justify-content: space-around;
 }
 
 .lienfooter {
@@ -439,6 +441,26 @@ footer {
 }
 
 
+
+}
+button {
+  width: 1rem;
+  height: 2rem;
+  background-color: #2b4570;
+  color: white;
+  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
+  border-radius: 1%;
+}
+
+.imageCarrousel {
+  width: 100%;
+}
+
+.liste {
+  flex-direction: row; 
+  display:flex;
+  align-items: center;
+  
 .colorWhite {
   font-size: 0.8em;
 }
@@ -470,4 +492,5 @@ footer {
   .displayNone {
     display: block;
   }
+
 }
