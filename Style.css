@@ -103,7 +103,7 @@ section {
 }
 body {
   line-height: 1;
-}
+}ouvrir lien nouvelle fenetre html
 ol,
 ul {
   list-style: none;
@@ -240,6 +240,24 @@ span {
   border-radius: 3%;
 }
 
+.citation {
+  font-style: oblique;
+  text-align: center;
+}
+
+hr {
+  width: 25%;
+  color: #d5b544;
+}
+
+.article p:first-of-type {
+  font-style: "Montserrat-Bold";
+}
+
+.article h1 {
+  text-align: center;
+}
+
 .article1 {
   text-align: center;
   width: 35rem;
@@ -365,7 +383,7 @@ footer {
 
 .block {
   display: flex;
-  flex-wrap: wrap;
+  
   list-style: none;
   padding: 0;
   align-items: center;
@@ -385,6 +403,7 @@ footer {
 .lienfooter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
 }
@@ -395,7 +414,6 @@ footer {
   list-style: none;
   padding: auto;
   align-items: center;
-
   color: ghostwhite;
 }
 .blockliens {
@@ -403,3 +421,8 @@ footer {
   width: 50%;
   align-content: space-between;
 }
+
+.colorWhite {
+  font-size: 0.8em;
+}
+]
