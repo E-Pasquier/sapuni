@@ -148,10 +148,10 @@ body {
   font-family: "Montserrat";
 }
 
-h1, 
+h1,
 h2,
 h3 {
-  font-family: "Montserrat-Bold"
+  font-family: "Montserrat-Bold";
 }
 
 footer,
@@ -161,7 +161,7 @@ header {
 }
 
 .menu-header {
-  list-style: none ;
+  list-style: none;
 }
 
 header {
@@ -197,7 +197,7 @@ p {
   box-shadow: 0.313rem 0.125rem 0.125rem #2b4570;
 }
 
-.cardTitle, 
+.cardTitle,
 .cardExcerpt {
   text-align: center;
   text-transform: uppercase;
@@ -208,7 +208,6 @@ p {
 }
 
 /* MENU BURGER !! */
-
 
 #menu {
   width: 35px;
@@ -271,3 +270,52 @@ p {
   display: block;
 }
 
+/* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTTTEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRR !! */
+
+footer {
+  background-color: #2b4570;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+}
+
+.liste {
+  margin: 10px;
+  color: ghostwhite;
+}
+
+.icone {
+  height: auto;
+  width: 50%;
+}
+
+.lienfooter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+.listeliens {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: auto;
+  align-items: center;
+
+  color: ghostwhite;
+}
+.blockliens {
+  display: flex;
+  width: 50%;
+  align-content: space-between;
+}
