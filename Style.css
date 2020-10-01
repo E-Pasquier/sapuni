@@ -220,23 +220,26 @@ span {
 }
 
 .card {
-  width: 12.5rem;
-  background-color: white;
-  box-shadow: 0.313rem 0.125rem 0.125rem #2b4570;
-  border-radius: 3%;
+  width: 13rem;
+  height: 13rem;
+  background-color: #A6BBDD;
+  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
+  border-radius: 1%;
   display: flex;
   margin: 2rem;
-  border: 4px solid #d5b544;
+  i
 }
 
 .cardTitle,
 .cardExcerpt {
   text-align: center;
   text-transform: uppercase;
+  color: white;
 }
 
 .cardImage {
-  width: 12.5rem;
+  width: 40%;
+  height: 60%;
   border-radius: 3%;
 }
 
@@ -422,7 +425,3 @@ footer {
   align-content: space-between;
 }
 
-.colorWhite {
-  font-size: 0.8em;
-}
-]
