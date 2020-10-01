@@ -251,6 +251,14 @@ span {
   height: 60%;
   overflow:hidden;
   border-radius:100%;
+  margin-left: 2.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid white;
+}
+
+.cardCollector {
+  display: none;
+  margin-top: -0.8rem;
 }
 
 /* Mise en page relative aux articles */
@@ -376,15 +384,30 @@ input[type="submit"] {
 }
 
 /* PAGE AUTEUR AVEC LES CARDS ET TOUT C LEA QUI FAIT ON TOUCHE PAS MERCI LES BG */
-
 .cardAuteur {
   width: 25rem;
-  padding: 6rem
+  padding: 4rem;
+  background-color: #A6BBDD;
+  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
+  border-radius: 1%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #selectAuthor {
   float: right;
   margin: 2rem;
+}
+
+.cardAuteurImg {
+  width: 60%;
+  height: 14rem;
+  overflow:hidden;
+  border-radius:100%;
+  border: 2px solid white;
+  margin-left: 4rem;
 }
 
 
@@ -467,7 +490,25 @@ footer {
     margin-left: 1rem;
   }
 
-  .displayNone {
+  .cardCollector {
     display: block;
+    width: 13rem;
+    box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   }
+
+  .cards {
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cardAuteur {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
