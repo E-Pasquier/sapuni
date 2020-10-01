@@ -410,4 +410,111 @@ footer {
 .colorWhite {
   font-size: 0.8em;
 }
-]
+
+/*------------- (order selection button on articles page)-----------*/
+.selectbutton{
+  margin: auto;
+  width: 100%;
+  max-width: 155px;
+  padding-top: 1rem;
+}
+
+/*------------- (order selection button on articles page)-----------*/
+
+/*------------- (Title on Banner articles page)-----------*/ 
+ul.banner-articles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.banner-title1{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+.banner-title2{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+.banner-title3{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+.article01{
+  width : 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.article02{
+  width : 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.article03{
+  width : 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+
+.bottom01 {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.bottom02 {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px; 
+  width: 100%;
+}
+
+.bottom03 {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px; 
+  width: 100%;
+}
+
+.banner-image01{
+  width : 100%;
+  height: auto;
+}
+
+.banner-image02{
+  width : 100%;
+  height: auto;
+}
+
+.banner-image03{
+  width : 100%;
+  height: auto;
+}
+
+
+/*------------- (Title on Banner articles page)-----------*/ 
