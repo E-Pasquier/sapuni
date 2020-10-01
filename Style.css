@@ -170,6 +170,15 @@ header {
   font-family: "Ailerons";
 }
 
+header h1 {
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .displayNone {
   display: none;
 }
@@ -182,11 +191,13 @@ a {
   color: white;
 }
 
-img.logo {
+.logo {
   width: 5%;
   height: 5%;
-  margin-left: 50px;
-  display: inline-block;
+  float: left;
+  margin-left: 50%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -198,10 +209,21 @@ span {
   font-family: "Montserrat-Bold";
 }
 
-.cardRaoult {
-  width: 25rem;
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 12.5rem;
   background-color: white;
   box-shadow: 0.313rem 0.125rem 0.125rem #2b4570;
+  border-radius: 3%;
+  display: flex;
+  margin: 2rem;
+  border: 4px solid #D5B544;
 }
 
 .cardTitle, 
@@ -211,7 +233,13 @@ span {
 }
 
 .cardImage {
-  width: 25rem;
+  width: 12.5rem;
+  border-radius: 3%;
+}
+
+.article1 {
+  text-align: center;
+  width: 35rem;
 }
 
 .bannerArticle {
@@ -252,8 +280,8 @@ form {
 #menu {
   width: 35px;
   height: 30px;
-  margin-top: 1.2rem;
-  margin-right: 1.5rem;
+  padding-top: 1.3rem;
+  padding-right: 1.5rem;
   cursor: pointer;
   float: right;
 }
@@ -310,3 +338,7 @@ form {
   display: block;
 }
 
+.linkMenu {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
