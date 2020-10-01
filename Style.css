@@ -410,20 +410,22 @@ ul.block {
 .liensociaux{
   width: 100%;
   display: flex;
-  max-width: 600px;
+  max-width: 450px;
   
 }
 
 .liste {
   margin: 10px;
   color: ghostwhite;
-  width: 80px;
+  width: 4rem;
+  margin-right: 0.3rem;
 }
 
 .icone {
   
   height: auto;
   width: 50%;
+  
 }
 
 .lienfooter {
@@ -454,6 +456,36 @@ ul.block {
 .colorWhite {
   font-size: 0.8em;
 }
+
+/*------------- (First n second title/paragraph on Index)-----------*/
+body *{
+  padding: 0;
+}
+
+.blockIndex{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  
+  
+  
+  
+}
+
+.listIndex{
+  list-style: none;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+ 
+                    
+                    
+}
+
+/*------------- (First n second title/paragraph on Index)-----------*/
+
 
 /*------------- (order selection button on articles page)-----------*/
 .selectbutton{
