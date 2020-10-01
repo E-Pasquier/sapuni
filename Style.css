@@ -103,7 +103,7 @@ section {
 }
 body {
   line-height: 1;
-}
+}ouvrir lien nouvelle fenetre html
 ol,
 ul {
   list-style: none;
@@ -193,10 +193,10 @@ a {
 }
 
 .logo {
-  width: 5%;
-  height: 5%;
+  width: 3rem;
+  height: 3rem;
   float: left;
-  margin-left: 50%;
+  margin-left: 45%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -209,6 +209,16 @@ p {
 span {
   font-family: "Montserrat-Bold";
 }
+
+.inscriptionButton {
+  background-color: #A6BBDD;
+  text-align: center #2b4570;
+  width: 100%;
+  height: 4rem;
+}
+
+
+/* c'est le code des cartes index */
 
 .cards {
   display: flex;
@@ -225,7 +235,8 @@ span {
   border-radius: 1%;
   display: flex;
   margin: 2rem;
-  i
+  padding-bottom: 1rem;
+
 }
 
 .cardTitle,
@@ -236,9 +247,30 @@ span {
 }
 
 .cardImage {
-  width: 40%;
+  width: 60%;
   height: 60%;
-  border-radius: 3%;
+  overflow:hidden;
+  border-radius:100%;
+}
+
+/* Mise en page relative aux articles */
+
+.citation {
+  font-style: oblique;
+  text-align: center;
+}
+
+hr {
+  width: 25%;
+  color: #d5b544;
+}
+
+.article p:first-of-type {
+  font-style: "Montserrat-Bold";
+}
+
+.article h1 {
+  text-align: center;
 }
 
 .article1 {
@@ -264,7 +296,7 @@ form {
 
 input,
 textarea,
-select {
+.selectContact {
   padding: 3px;
   border: 1px solid #a8d0db;
   border-radius: 5px;
@@ -313,6 +345,7 @@ input[type="submit"] {
 .menu-header li {
   list-style: none;
   padding: 16px 0;
+  font-size: 1.5rem;
 }
 
 .menu-header {
@@ -323,7 +356,7 @@ input[type="submit"] {
 }
 
 .menu-header li a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .change #bar1 {
@@ -342,6 +375,19 @@ input[type="submit"] {
   display: block;
 }
 
+/* PAGE AUTEUR AVEC LES CARDS ET TOUT C LEA QUI FAIT ON TOUCHE PAS MERCI LES BG */
+
+.cardAuteur {
+  width: 25rem;
+  padding: 6rem
+}
+
+#selectAuthor {
+  float: right;
+  margin: 2rem;
+}
+
+
 /* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTTTEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRR !! */
 
 footer {
@@ -353,7 +399,7 @@ footer {
 
 .block {
   display: flex;
-  flex-wrap: wrap;
+  
   list-style: none;
   padding: 0;
   align-items: center;
@@ -375,6 +421,7 @@ footer {
 .lienfooter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
 }
@@ -385,7 +432,6 @@ footer {
   list-style: none;
   padding: auto;
   align-items: center;
-
   color: ghostwhite;
 }
 .blockliens {
@@ -394,13 +440,7 @@ footer {
   align-content: space-between;
 }
 
-.articleCard {
-  width: 100%;
-  background-color: #A6BBDD;
-  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
-  border-radius: 1%;
-  display: flex;
-  margin: 2rem;
+
 
 }
 button {
@@ -421,4 +461,36 @@ button {
   display:flex;
   align-items: center;
   
+.colorWhite {
+  font-size: 0.8em;
+}
+
+/* media queries responsive étou */
+
+@media screen and (min-width: 768px) { /*768px taille standard pour les desktop */
+  #menu {
+    display: none;
+  }
+  .menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .linkMenu {
+    display: flex;
+    margin-right: 3rem;
+    font-size: 4rem;
+  }
+
+  .logo {
+    float: left;
+    margin-left: 1rem;
+  }
+
+  .displayNone {
+    display: block;
+  }
+
 }

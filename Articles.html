@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,18 +9,29 @@
   </head>
 
   <header>
-    <nav>
-      <div class="">
-        <img src="img/LOGO-SAPUNI.svg" alt="Logo" />
+    <nav> 
+
+      <!-- menu burger -->
+
+      <div id="menuBar">
+        <img src="img/LOGO1-SAPUNI.png" class="logo" alt="Logo" />
+        
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul id="navMenu" class="menu-header">
+            <li class="linkMenu"><a class="colorWhite" href="Index.html">Home</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Articles.html">Articles</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Contact.html">Contact</a></li>
+        </ul>
       </div>
-      <ul class="menu-header">
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="Articles.html">Articles</a></li>
-        <li><a href="Auteurs.html">Auteurs</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
+
+  </nav>
+</header>
 
   <body>
     <label for="selectFilter">
@@ -29,6 +41,16 @@
         <option value="les + populaires">les + populaires</option>
       </select>
     </label>
+
+    <article class=article2>
+      <h1>Mike Hughes : Prophète des temps modernes.</h1>
+      <img src= img/BANNER-ARTICLE.jpg alt="banner-article1"/>
+      <p>
+        Un eminent membre de notre communauté a trouver la mort le 22 Fevrier dans sa quète de vérité. 
+        Il a courageusement pris place aux commandes d'une fusée de sa fabrication au bord de laquelle il comptait prouver que la terre est plate.
+        Suite à ce tragique évènement, Mike Hughes à été élevé au rang de prophète de la communauté.
+      </p>
+    </article>
 
     <article class=article1>
       <h1>Reportage : nous avons rencontré Djohn Travolta et Tomme crouse.</h1>
@@ -47,11 +69,13 @@
       <p></p>
     </article>
 
-    <article class="">
-      <div>
-        <img class="" src="" alt="" />
-      </div>
-      <p></p>
+    <article class="article3">
+      <h1>Rencontre avec notre divinité : Geo-Pinchat, le Grand. </h1>
+      <img src="img/BANNER-ARTICLE.jpg" alt="banner-article3" />
+      <p>
+      Pourquoi SAPUNI se repose tant sur notre Geo-Pinchat ? Que peut-il nous apporter ? D'où vient-il ? Pourquoi la vie de Gérard Bouchard ainsi que celle de tous nos fidèles a-t-elle basculée depuis la mythique rencontre ?
+      Obtenez des réponses dans cet article...  
+      </p>
     </article>
   </body>
 

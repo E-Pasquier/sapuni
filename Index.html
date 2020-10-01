@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAPUNI vous ouvre ses portes.</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAPUNI vous ouvre ses portes.</title>
-  <link rel="stylesheet" href="Style.css" />
-</head>
+  <header>
+    <nav> 
 
-<header>
-  <nav>
+      <!-- menu burger -->
 
-    <!-- menu burger -->
-
-    <div id="menuBar">
-      <img src="img/LOGO1-SAPUNI.png" class="logo" alt="Logo" />
-
-      <div id="menu" onclick="onClickMenu()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
+      <div id="menuBar">
+        <img src="img/LOGO1-SAPUNI.png" class="logo" alt="Logo" />
+        
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul id="navMenu" class="menu-header">
+            <li class="linkMenu"><a class="colorWhite" href="Index.html">Home</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Articles.html">Articles</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Contact.html">Contact</a></li>
+        </ul>
       </div>
-      <ul id="navMenu" class="menu-header">
-        <li class="linkMenu"><a class="colorWhite" href="Index.html">Home</a></li>
-        <li class="linkMenu"><a class="colorWhite" href="Articles.html">Articles</a></li>
-        <li class="linkMenu"><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
-        <li class="linkMenu"><a class="colorWhite" href="Contact.html">Contact</a></li>
-      </ul>
-    </div>
+
 
   </nav>
 </header>
@@ -71,7 +72,7 @@
 
       <div class="card">
         <div>
-          <img class="cardImage" src="" alt="Géo-Pinchat">
+          <img class="cardImage" src="img/geoPinchat.jpg" alt="Géo-Pinchat">
           <h3 class="cardTitle">Géo-Pinchat</h3>
           <p class="cardExcerpt">La Divinité</p>
         </div>
@@ -80,7 +81,7 @@
 
       <div class="card">
         <div>
-          <img class="cardImage" src="" alt="Gérard Bouchard">
+          <img class="cardImage" src="img/gege.jgp" alt="Gérard Bouchard">
           <h3 class="cardTitle">Gérard Bouchard</h3>
           <p class="cardExcerpt">Le Gourou</p>
         </div>
@@ -129,36 +130,35 @@
 
     </div>
 
-  </section>
+    <section>
+      <h2 class="displayNone"> Nos derniers articles</h2>
 
-  <section>
-
-
-    <h2 class="displayNone"> Nos derniers articles</h2>
-
-    <div class="derniersArticles">
-      <div class="article1">
-        <h3>Reportage : nous avons rencontré Djohn Travolta et Tomme crouse.</h3>
-        <img src=img/BANNER-ARTICLE.jpg alt="banner-article1" />
-        <p>
-          La semaine dernière, lors de notre visite du centre, nous avons eu le privilège de rencontrer Djohn Travolta
-          et Tomme Crouse.
-          <div class="displayNone">
-            Ces deux personnalités sont parmi les fidèles et les plus investis la communauté SAPUNI.
+      <div class="derniersArticles">
+          <div class="article_preview">
+            <h3>Reportage : nous avons rencontré Djohn Travolta et Tomme crouse.</h3>
+            <img src= img/BANNER-ARTICLE.jpg alt="banner-article1"/>
+            <p>
+            La semaine dernière, lors de notre visite du centre, nous avons eu le privilège de rencontrer Djohn Travolta et Tomme Crouse. 
+            <div class="displayNone">
+            Ces deux personnalités sont parmi les fidèles et les plus investis la communauté SAPUNI. 
             Nous avons profité de ce moment intime pour leur poser quelques questions dont en voici un extrait...</span>
-        </p>
-      </div>
-      <a href="ArticleX.html"> Lire l'article </a>
-      <div class="displayNone">
-        <div class="article2">
-        </div>
-        <button>Lire l'article</button>
-      </div>
+            </p>
+            <a href="ArticleX.html"> Lire l'article </a>
+          </div>
+          <div class="displayNone">
+            <div class="article_preview">
+              <button>Lire l'article</button>
+            </div>
+          </div> 
 
   </section>
 
+  
+    <h2 class="displayNone">Nous rejoindre</h2>
 
-  <h2 class=displayNone>Nous rejoindre</h2>
+    <section>
+      <button class="inscriptionButton">ALLEZ CLIQUE, VIENS... ON EST BIEN !</button>
+    </section>
 
 
   <section class=inscriptionButton>
@@ -170,18 +170,18 @@
 </body>
 
 <footer>
-  <!-- WORK IN PREGRESS DO NOT TOUCHER A RIEN-->
-  <div class="blockliens">
-    <ul class="lienfooter">
-      <li class=listeliens>
-        <a class="colorWhite" href="Contact.html">Contact</a>
-      </li>
-      <li class=listeliens>
-        <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
-      </li>
-      <li class=listeliens>
-        <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte</a>
-      </li>
+    <!-- WORK IN PREGRESS DO NOT TOUCHER A RIEN-->
+    <div class="blockliens">
+      <ul class="lienfooter"> 
+        <li class=listeliens>
+          <a class="colorWhite" href="Contact.html">Contact</a>
+        </li>
+        <li class=listeliens>  
+          <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
+        </li>
+        <li class=listeliens>
+          <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte données personnelles</a>
+        </li> 
       <ul>
   </div>
   <div>

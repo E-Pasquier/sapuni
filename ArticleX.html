@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,37 +9,49 @@
   </head>
 
   <header>
-    <nav>
-      <div class="">
-        <img src="img/LOGO-SAPUNI.svg" alt="Logo" />
+    <nav> 
+
+      <!-- menu burger -->
+
+      <div id="menuBar">
+        <img src="img/LOGO1-SAPUNI.png" class="logo" alt="Logo" />
+        
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul id="navMenu" class="menu-header">
+            <li class="linkMenu"><a class="colorWhite" href="Index.html">Home</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Articles.html">Articles</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Contact.html">Contact</a></li>
+        </ul>
       </div>
-      <ul class="menu-header">
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="Articles.html">Articles</a></li>
-        <li><a href="Auteurs.html">Auteurs</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
+
+  </nav>
+</header>
 
   <body>
     
-    <section class=article>
+    <section class="article">
       <h1>Reportage : nous avons rencontré Djohn Travolta et Tomme crouse.</h1>
       <img src= img/BANNER-ARTICLE.jpg class= "bannerArticle" alt="banner-article1"/>
       <ul>
-        <li> Auteurs : Léa, Louise, Emeric, Marion, les Inconnus (un peu)</li>
-        <li> Publié le : </li>
+        <li> Auteurs : <a href="Auteurs.html">Léa</a>, <a href="Auteurs.html">Louise</a>, <a href="Auteurs.html">Emeric</a>, <a href="Auteurs.html">Marion</a>, <a href="http://www.pascallegitimus.com/les-inconnus/" target="_blank">les Inconnus (un peu)</a></li>
+        <li> Publié le : 29/09/20</li>
       </ul>
       <p>
       La semaine dernière, lors de notre visite du centre, nous avons eu le privilège de rencontrer Djohn Travolta et Tomme Crouse. </br>  
       Ces deux personnalités sont parmi les fidèles et les plus investis la communauté SAPUNI. 
       Nous avons profité de ce moment intime pour leur poser quelques questions dont en voici un extrait...
       </p>
-      <p>
-      Le mode de vie est simple. Nous nous en référons au Grand Gégé qui est le maître à penser du lieu et du culte de Géo-Pinchat. 
-      <!--à faire figurer comme citation-->
+      <hr>
+      <p class="citation">
+      "Le mode de vie est simple. Nous nous en référons au Grand Gégé qui est le maître à penser du lieu et du culte de Géo-Pinchat." 
       </p>
+      <hr>
       <p>
       <span>Pouvez-vous résumer la pensée de votre élu ?</span></br>
       Djohn Travolta : Tenter une rèsumance de la pensée de Géo-Pinchat me paraît impossible.
@@ -89,13 +102,34 @@
       </p>
       <p>Si vous souhaitez rejoindre Djohn et Tomme, contactez-nous <a href = "Contact.html">ici.</a> </p>
     </section>
-  
-    <section class=articleSimilaires>
-      <p>Voir les article similaires</p>
+    
+    <!-- ces articles ne sont à afficher qu'en version deckstop, c'est la preview du 2 et 3 -->
+    <section class="displayNone">
+      <h2> Voir les articles similaires</h2>
+
+      <article class=article2>
+        <h1>Mike Hughes : Prophète des temps modernes.</h1>
+        <img src= img/BANNER-ARTICLE.jpg alt="banner-article1"/>
+        <p>
+        Un eminent membre de notre communauté a trouver la mort le 22 Fevrier dans sa quète de vérité. 
+        Il a courageusement pris place aux commandes d'une fusée de sa fabrication au bord de laquelle il comptait prouver que la terre est plate.
+        Suite à ce tragique évènement, Mike Hughes à été élevé au rang de prophète de la communauté.
+        </p>
+      </article>
+
+      <article class=article3>
+        <h1>Rencontre avec notre divinité : Geo-Pinchat, le Grand. </h1>
+        <img src="img/BANNER-ARTICLE.jpg" alt="banner-article3" />
+        <p>
+        Pourquoi SAPUNI se repose tant sur notre Geo-Pinchat ? Que peut-il nous apporter ? D'où vient-il ? Pourquoi la vie de Gérard Bouchard ainsi que celle de tous nos fidèles a-t-elle basculée depuis la mythique rencontre ?
+        Obtenez des réponses dans cet article...  
+        </p>
+      </article>
     </section>
   
-    <section class=inscriptionButton>
-      <button>ALLEZ, VIENS...</button>
+    <!-- LEA C POUR TOI DROLE DE DAME : MEDIAQUERIES-->
+    <section class="displayNoneDeckstop">
+      <button class="inscriptionButton">ALLEZ CLIQUE, VIENS... ON EST BIEN !</button>
     </section>
 
   </body>
