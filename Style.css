@@ -193,10 +193,10 @@ a {
 }
 
 .logo {
-  width: 5%;
-  height: 5%;
+  width: 3rem;
+  height: 3rem;
   float: left;
-  margin-left: 50%;
+  margin-left: 45%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
