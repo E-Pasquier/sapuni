@@ -210,6 +210,14 @@ span {
   font-family: "Montserrat-Bold";
 }
 
+.inscriptionButton {
+  background-color: #A6BBDD;
+  text-align: center #2b4570;
+  width: 100%;
+  height: 4rem;
+}
+
+
 /* c'est le code des cartes index */
 
 .cards {
@@ -242,6 +250,8 @@ span {
   height: 60%;
   border-radius: 3%;
 }
+
+/* Mise en page relative aux articles */
 
 .citation {
   font-style: oblique;
