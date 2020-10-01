@@ -8,16 +8,26 @@
   </head>
 
   <header>
-    <nav>
-      <div class="">
-        <img src="img/LOGO-SAPUNI.svg" alt="Logo" />
+    <nav> 
+
+      <!-- menu burger -->
+
+      <div id="menuBar">
+        <img src="img/LOGO1-SAPUNI.png" class="logo" alt="Logo" />
+        
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul id="navMenu" class="menu-header">
+            <li class="linkMenu"><a class="colorWhite" href="Index.html">Home</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Articles.html">Articles</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
+            <li class="linkMenu"><a class="colorWhite" href="Contact.html">Contact</a></li>
+          </ul>
       </div>
-      <ul class="menu-header">
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="Articles.html">Articles</a></li>
-        <li><a href="Auteurs.html">Auteurs</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
+
     </nav>
   </header>
 
@@ -36,7 +46,20 @@
 
       <!-- cards auteurs (j'en met 4 en prévison et on en cachera 3 avec un display: none pour le moment je pense) -->
 
-      <div class="">
+
+      <div class="cardAuteurContainer">
+
+      <!-- Lorsque j'ai rejoint la communauté SAPUNI, Je n'avais pas grand-chose. Je vivais reclus dans les montagnes avec mon troupeau de chèvres. 
+        Pour me faire un peu d'argent, je vendais au village mon fromage et de la liqueur de Génépi de ma fabrication. 
+        Aujourd'hui, mes chèvres et mes compétences sont la propriété du grand Géo-Pinchat. 
+        Je suis également chargé de l'organisation de séminaires pour reconnecter nos membres avec les animaux et la nature -->
+      
+      <!-- Commentaire Marion :
+      Mes interets : Je sais toucher mon coude avec ma langue / Tomme Cruise est mon keum
+      J'ai rejoins SANUPI pour rencontrer Tomme, j'ai vu que Tomme avait donné beaucoup de sous à Geo-Pinchat et même que moi je voulais qu'il me donne son argent, et son coeur.
+      Pour moi SANUPI c'est l'amour, celui de Tomme. La tomme de savoie et celle des Pyrénées... Tomme tomme tomme <3 -->
+      
+        <div class="">
         <img class="" alt="" />
         <ul>
           <li></li>
@@ -47,56 +70,115 @@
         <p></p>
       </div>
 
-      <div class="hidden">
-        <img class="" alt="" />
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <p></p>
+        <div class="displayNone cardAuteur">
+          <div>
+            <img class="cardAuteurImg" src="" alt="" />
+          </div>
+          <div class="cardAuteurListContainer">
+            <ul class="cardAuteurList">
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="cardAuteurList">
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+            <p></p>
+        </div>
+
+
+       <div class="cardAuteur">
+          <div>
+            <img class="cardAuteurImg" src="" alt="" />
+          </div>
+          <div class="cardAuteurListContainer">
+            <ul class="cardAuteurList">
+              <li>J'ai donné plus de 5000€ au grand Géo-Pinchat.</li>
+              <li>J'ai un jour serré la main de Gégé.</li>
+            </ul>
+            <ul class="cardAuteurList">
+              <li>Je suis Prêtresse Vivace (celle qui twerke).</li>
+              <li>J'aime les pieds.</li>
+            </ul>
+          </div>
+            <p>J'ai rejoint SAPUNI en 2001, quand mes parents on fait don de ma personne au grand Géo-Pinchat. 
+              C'est Tomme Crouse qui m'a é(n)levée en m'apprennant les principes de notre communauté. 
+              J'ai toujours donné toute ma vie à SAPUNI, et tout mon argent. Je vis maintenant de spiritualité en 
+              écrivant des articles pour notre belle communauté.</p>
+        </div>
+
+        <div class="displayNone cardAuteur">
+          <div>
+            <img class="cardAuteurImg" src="" alt="" />
+          </div>
+          <div class="cardAuteurListContainer">
+            <ul class="cardAuteurList">
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="cardAuteurList">
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+            <p></p>
+        </div>
+
+        <div class="displayNone cardAuteur">
+          <div>
+            <img class="cardAuteurImg" src="" alt="" />
+          </div>
+          <div class="cardAuteurListContainer">
+            <ul class="cardAuteurList">
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="cardAuteurList">
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+            <p></p>
+        </div>
+
       </div>
 
-      <div class="hidden">
-        <img class="" alt="" />
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <p></p>
-      </div>
-
-      <div class="hidden">
-        <img class="" alt="" />
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <p></p>
-      </div>
     </section>
 
     <section class="inscriptionButton">
       <button>ALLEZ, VIENS...</button>
     </section>
+
+    <script src="Script.js"></script>
+
   </body>
 
   <footer>
     <div class="lienFooter">
       <a class="colorWhite" href="Contact.html">Contact</a>
-      <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
-      <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte Données Personnelles</a>
+      <a class="colorWhite" href="https://particuliers.societegenerale.fr/"
+        >Conditions Génerales</a
+      >
+      <a
+        class="colorWhite"
+        href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal"
+        >Charte Données Personnelles</a
+      >
     </div>
     <div class="logoSociaux">
-      <a href="https//:www.twitter.fr" class="twitter"><img src="" alt="twitter" /></a>
-      <a href="https//:www.facebook.fr" class="facebook"><img src="" alt="facebook" /></a>
-      <a href="https//:www.instagram.fr" class="instagram"><img src="" alt="instagram" /></a>
-      <a href="https://www.leetchi.com/c/boiremangeraimer" class="leetchi"><img src="" alt="leetchi" /></a>
+      <a href="https//:www.twitter.fr" class="twitter"
+        ><img src="" alt="twitter"
+      /></a>
+      <a href="https//:www.facebook.fr" class="facebook"
+        ><img src="" alt="facebook"
+      /></a>
+      <a href="https//:www.instagram.fr" class="instagram"
+        ><img src="" alt="instagram"
+      /></a>
+      <a href="https://www.leetchi.com/c/boiremangeraimer" class="leetchi"
+        ><img src="" alt="leetchi"
+      /></a>
     </div>
   </footer>
 </html>
