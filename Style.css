@@ -350,7 +350,7 @@ footer {
 
 .block {
   display: flex;
-  flex-wrap: wrap;
+  
   list-style: none;
   padding: 0;
   align-items: center;
@@ -370,6 +370,7 @@ footer {
 .lienfooter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
 }
@@ -380,7 +381,6 @@ footer {
   list-style: none;
   padding: auto;
   align-items: center;
-
   color: ghostwhite;
 }
 .blockliens {
@@ -388,3 +388,8 @@ footer {
   width: 50%;
   align-content: space-between;
 }
+
+.colorWhite {
+  font-size: 0.8em;
+}
+]
