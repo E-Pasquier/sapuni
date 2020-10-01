@@ -235,7 +235,7 @@ span {
   border-radius: 1%;
   display: flex;
   margin: 2rem;
-  i
+  padding-bottom: 1rem;
 }
 
 .cardTitle,
@@ -246,9 +246,10 @@ span {
 }
 
 .cardImage {
-  width: 40%;
+  width: 60%;
   height: 60%;
-  border-radius: 3%;
+  overflow:hidden;
+  border-radius:100%;
 }
 
 /* Mise en page relative aux articles */
