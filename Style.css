@@ -1,130 +1,3 @@
-/* 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}ouvrir lien nouvelle fenetre html
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-*/
-
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("fonts/Montserrat-Bold.ttf");
@@ -228,8 +101,8 @@ span {
 }
 
 .card {
-  width: 13rem;
-  height: 13rem;
+  width: 10rem;
+  height: 14rem;
   background-color: #A6BBDD;
   box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
@@ -248,10 +121,10 @@ span {
 
 .cardImage {
   width: 60%;
-  height: 60%;
+  height: 45%;
   overflow:hidden;
   border-radius:100%;
-  margin-left: 2.5rem;
+  margin-left: 2rem;
   margin-top: 0.5rem;
   border: 2px solid white;
 }
@@ -386,11 +259,10 @@ input[type="submit"] {
 /* PAGE AUTEUR AVEC LES CARDS ET TOUT C LEA QUI FAIT ON TOUCHE PAS MERCI LES BG */
 .cardAuteur {
   width: 25rem;
-  padding: 4rem;
+  padding: 3rem;
   background-color: #A6BBDD;
-  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
@@ -406,8 +278,14 @@ input[type="submit"] {
   height: 14rem;
   overflow:hidden;
   border-radius:100%;
-  border: 2px solid white;
-  margin-left: 4rem;
+  border: 24px solid white;
+  margin-left: 3.5rem;
+}
+
+.test {
+  margin-top: -10rem;
+  padding-top: 2rem;
+  
 }
 
 
@@ -465,7 +343,6 @@ footer {
 
 
 
-}
 button {
   width: 1rem;
   height: 2rem;
@@ -483,9 +360,38 @@ button {
   flex-direction: row; 
   display:flex;
   align-items: center;
-  
-.colorWhite {
-  font-size: 0.8em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formFlex {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.formWidth {
+  width: 30rem;
+}
+
+.buttonForm {
+  float: right;
+  margin-top: 1rem;
+  margin-left: 25rem;
+  width: 7rem;
+}
+
+iframe {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-left: 15%;
 }
 
 /* media queries responsive étou */
@@ -528,9 +434,28 @@ button {
     margin-right: auto;
   }
 
+  .card {
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    margin: 2rem;
+    padding-bottom: 1rem;
+  
+  }
+
+  .cardImage {
+    width: 60%;
+    height: 60%;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
   .cardAuteur {
     margin-left: auto;
     margin-right: auto;
   }
- }
-  
+
+  .formWidth {
+    width: 50rem;
+  }
+}
