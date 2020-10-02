@@ -263,11 +263,10 @@ input[type="submit"] {
 /* PAGE AUTEUR AVEC LES CARDS ET TOUT C LEA QUI FAIT ON TOUCHE PAS MERCI LES BG */
 .cardAuteur {
   width: 25rem;
-  padding: 4rem;
+  padding: 3rem;
   background-color: #A6BBDD;
-  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
@@ -283,8 +282,14 @@ input[type="submit"] {
   height: 14rem;
   overflow:hidden;
   border-radius:100%;
-  border: 2px solid white;
-  margin-left: 4rem;
+  border: 24px solid white;
+  margin-left: 3.5rem;
+}
+
+.test {
+  margin-top: -10rem;
+  padding-top: 2rem;
+  
 }
 
 
@@ -479,6 +484,38 @@ ul.banner-articles{
 
 
 /*------------- (Title on Banner articles page)-----------*/ 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formFlex {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.formWidth {
+  width: 30rem;
+}
+
+.buttonForm {
+  float: right;
+  margin-top: 1rem;
+  margin-left: 25rem;
+  width: 7rem;
+}
+
+iframe {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-left: 15%;
+}
+
 /* media queries responsive étou */
 
 @media screen and (min-width: 768px) { /*768px taille standard pour les desktop */
@@ -548,6 +585,7 @@ ul.banner-articles{
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 3rem;
   }
 
   .cardAuteur {
@@ -561,6 +599,11 @@ ul.banner-articles{
 body *{
   padding: 0;
 }
+
+.formWidth {
+  width: 50rem;
+}
+
 
 .blockIndex{
   
@@ -579,8 +622,10 @@ body *{
 
 /*------------- (First n second title/paragraph on Index)-----------*/
 /*------------- (BANNER CHATPINGOUIN)-----------*/
-.chatpingouin{
+.chatpingouin {
   width: 100%;
 }
 
-/*------------- (BANNER CHATPINGOUIN)-----------*/
+.derniersArticles{
+  padding-top: 2rem;
+}
