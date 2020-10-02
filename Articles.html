@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,95 +8,114 @@
   </head>
 
   <header>
-    <nav> 
-
+    <nav>
       <!-- menu burger -->
 
       <div id="menuBar">
         <img src="img/LOGO1-SAPUNI.png" class="logo" alt="Logo" />
-        
+
         <div id="menu" onclick="onClickMenu()">
           <div id="bar1" class="bar"></div>
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>
         </div>
         <ul id="navMenu" class="menu-header">
-            <li class="linkMenu"><a class="colorWhite" href="Index.html">Home</a></li>
-            <li class="linkMenu"><a class="colorWhite" href="Articles.html">Articles</a></li>
-            <li class="linkMenu"><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
-            <li class="linkMenu"><a class="colorWhite" href="Contact.html">Contact</a></li>
+          <li class="linkMenu">
+            <a class="colorWhite" href="Index.html">Home |</a>
+          </li>
+          <li class="linkMenu">
+            <a class="colorWhite" href="Articles.html">Articles |</a>
+          </li>
+          <li class="linkMenu">
+            <a class="colorWhite" href="Auteurs.html">Auteurs |</a>
+          </li>
+          <li class="linkMenu">
+            <a class="colorWhite" href="Contact.html">Contact</a>
+          </li>
         </ul>
       </div>
-
-
-  </nav>
-</header>
+    </nav>
+  </header>
 
   <body>
-    <label for="selectFilter">
-      <select name="Filter" id="selectFilter">
-        <option value="les + récents">les + récents</option>
-        <option value="les - récents">les - récents</option>
-        <option value="les + populaires">les + populaires</option>
-      </select>
-    </label>
+    <div class="selectbutton">
+      <label for="selectFilter">
+        <select name="Filter" id="selectFilter">
+          <option value="les + récents">les + récents</option>
+          <option value="les - récents">les - récents</option>
+          <option value="les + populaires">les + populaires</option>
+        </select>
+      </label>
+    </div>
 
-    <article class=article2>
-      <h1>Mike Hughes : Prophète des temps modernes.</h1>
-      <img src= img/BANNER-ARTICLE.jpg alt="banner-article1"/>
-      <p>
-        Un eminent membre de notre communauté a trouver la mort le 22 Fevrier dans sa quète de vérité. 
-        Il a courageusement pris place aux commandes d'une fusée de sa fabrication au bord de laquelle il comptait prouver que la terre est plate.
-        Suite à ce tragique évènement, Mike Hughes à été élevé au rang de prophète de la communauté.
-      </p>
-    </article>
-
-  </hr>
-
-    <article class=article1>
-      <h1>Reportage : nous avons rencontré Djohn Travolta et Tomme crouse.</h1>
-      <img src= img/BANNER-ARTICLE.jpg alt="banner-article1"/>
-      <p>
-      La semaine dernière, lors de notre visite du centre, nous avons eu le privilège de rencontrer Djohn Travolta et Tomme Crouse. </br>  
-      Ces deux personnalités sont parmi les fidèles et les plus investis la communauté SAPUNI. 
-      Nous avons profité de ce moment intime pour leur poser quelques questions dont en voici un extrait...
-      </p>
-    </article>
-
-    <article class="">
-      <div>
-        <img class="" src="" alt="" />
-      </div>
-      <p></p>
-    </article>
-
-  </hr>
-
-    <article class="article3">
-      <h1>Rencontre avec notre divinité : Geo-Pinchat, le Grand. </h1>
-      <img src="img/BANNER-ARTICLE.jpg" alt="banner-article3" />
-      <p>
-      Pourquoi SAPUNI se repose tant sur notre Geo-Pinchat ? Que peut-il nous apporter ? D'où vient-il ? Pourquoi la vie de Gérard Bouchard ainsi que celle de tous nos fidèles a-t-elle basculée depuis la mythique rencontre ?
-      Obtenez des réponses dans cet article...  
-      </p>
-    </article>
-
+    <ul class="banner-articles">
+      <li class=article01>
+        <section class="banner-title1">
+            <h1 class="bottom01">Reportage : nous avons rencontré Djohn Travolta et Tomme Crouse.</h1>
+            <img  src= img/BANNER-ARTICLE.jpg alt="banner-article1" class="banner-image01"/>
+        </section>    
+        <p>
+        La semaine dernière, lors de notre visite du centre, nous avons eu le privilège de rencontrer Djohn Travolta et Tomme Crouse. 
+        Ces deux personnalités sont parmi les fidèles et les plus investis la communauté SAPUNI. 
+        Nous avons profité de ce moment intime pour leur poser quelques questions dont en voici un extrait...
+        </p>
+      </li>
+<hr>
+      <li class=article02>
+        <section class="banner-title2">
+          <h1 class="bottom02">Mike Hughes : Prophète des temps modernes.</h1>
+          <img src= img/banner-article-2.jpg alt="banner-article1" class="banner-image02"/>
+        </section>
+        <p>
+          Un éminent membre de notre communauté a trouvé la mort le 22 Fevrier dans sa quète de vérité. 
+          Il a courageusement pris place aux commandes d'une fusée de sa fabrication, au bord de laquelle il comptait prouver que la terre est plate.
+          Suite à ce tragique évènement, Mike Hughes à été élevé au rang de prophète de la communauté.
+        </p>
+      </li>
+<hr>
+      <li class="article03">
+        <section class="banner-title3">
+          <h1 class="bottom03">Rencontre avec notre divinité : Geo-Pinchat, le Grand. </h1>
+          <img src="img/banner-article-3.jpg" alt="banner-article3" class="banner-image03"/>
+        </section>
+        <p>
+        Pourquoi SAPUNI se repose tant sur notre Geo-Pinchat ? Que peut-il nous apporter ? D'où vient-il ? Pourquoi la vie de Gérard Bouchard ainsi que celle de tous nos fidèles a-t-elle basculée depuis la mythique rencontre ?
+        Obtenez des réponses dans cet article...  
+        </p>
+      </li>
+    </ul>
     <script src="Script.js"></script>
-
-    
   </body>
-
   <footer>
-    <div class="lienFooter">
-      <a class="colorWhite" href="Contact.html">Contact</a>
-      <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
-      <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte Données Personnelles</a>
-    </div>
-    <div class="logoSociaux">
-      <a href="https//:www.twitter.fr" class="twitter"><img src="" alt="twitter" /></a>
-      <a href="https//:www.facebook.fr" class="facebook"><img src="" alt="facebook" /></a>
-      <a href="https//:www.instagram.fr" class="instagram"><img src="" alt="instagram" /></a>
-      <a href="https://www.leetchi.com/c/boiremangeraimer" class="leetchi"><img src="" alt="leetchi" /></a>
-    </div>
-  </footer>
+    <div class="blockliens">
+      <ul class="lienfooter"> 
+        <li class=listeliens>
+          <a class="colorWhite" href="Contact.html">Contact</a>
+        </li>
+        <li class=listeliens>  
+          <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
+        </li>
+        <li class=listeliens>
+          <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte données personnelles</a>
+        </li> 
+      <ul>
+  </div>
+  <div class="liensociaux">
+    <ul class="block">
+      <li class="liste">
+        <a href="https//:www.twitter.fr"><img class="icone" src="img/Fichier 1 copie.png" alt="twitter" /></a>
+      </li class="liste">
+      <li class="liste">
+        <a href="https//:www.facebook.fr"><img class="icone" src="img/Fichier 1.png" alt="facebook" /></a>
+      </li>
+      <li class="liste">
+        <a href="https//:www.instagram.fr"><img class="icone" src="img/instaFichier 1.png" alt="instagram" /></a>
+      </li>
+      <li class="liste">
+        <a href="https://www.leetchi.com/c/boiremangeraimer"><img src="img/cochonFichier 1.png" class="icone" alt="leetchi" /></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
 </html>

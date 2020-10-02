@@ -43,9 +43,7 @@ header {
   font-family: "Ailerons";
 }
 
-header h1 {
-  margin: 0;
-}
+
 
 html,
 body {
@@ -77,6 +75,12 @@ a {
 p {
   font-family: "Montserrat";
   text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+h1 h2{
+  margin-left: 3em;
+  padding-left: 3em;
 }
 
 span {
@@ -295,21 +299,30 @@ footer {
   background-color: #2b4570;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
-.block {
+ul.block {
   display: flex;
-  
   list-style: none;
   padding: 0;
   align-items: center;
   align-content: center;
+  width:100%;
+  justify-content: flex-end;
+  
+}
+.liensociaux{
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+  
 }
 
 .liste {
   margin: 10px;
   color: ghostwhite;
+  width: 80px;
 }
 
 .icone {
@@ -321,10 +334,12 @@ footer {
 
 .lienfooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
 }
 
 .listeliens {
@@ -362,6 +377,113 @@ button {
   align-items: center;
 }
 
+/*------------- (order selection button on articles page)-----------*/
+.selectbutton{
+  margin: auto;
+  width: 100%;
+  max-width: 155px;
+  padding-top: 1rem;
+}
+
+/*------------- (order selection button on articles page)-----------*/
+
+/*------------- (Title on Banner articles page)-----------*/ 
+ul.banner-articles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.banner-title1{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+.banner-title2{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+.banner-title3{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+.article01{
+  width : 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.article02{
+  width : 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.article03{
+  width : 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+
+.bottom01 {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.bottom02 {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px; 
+  width: 100%;
+}
+
+.bottom03 {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px; 
+  width: 100%;
+}
+
+.banner-image01{
+  width : 100%;
+  height: auto;
+}
+
+.banner-image02{
+  width : 100%;
+  height: auto;
+}
+
+.banner-image03{
+  width : 100%;
+  height: auto;
+}
+
+
+/*------------- (Title on Banner articles page)-----------*/ 
 form {
   display: flex;
   flex-direction: column;
@@ -455,7 +577,55 @@ iframe {
     margin-right: auto;
   }
 
-  .formWidth {
-    width: 50rem;
+  .cards {
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
   }
+
+  .cardAuteur {
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+
+  
+/*------------- (First n second title/paragraph on Index)-----------*/
+body *{
+  padding: 0;
+}
+
+.formWidth {
+  width: 50rem;
+}
+
+
+.blockIndex{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.listIndex{
+  list-style: none;
+  width: 80%;
+  text-align: center;
+  margin: auto;                
+}
+
+/*------------- (First n second title/paragraph on Index)-----------*/
+/*------------- (BANNER CHATPINGOUIN)-----------*/
+.chatpingouin {
+  width: 100%;
+}
+
+.derniersArticles{
+  padding-top: 2rem;
 }
