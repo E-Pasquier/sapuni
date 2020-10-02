@@ -465,7 +465,6 @@ footer {
 
 
 
-}
 button {
   width: 1rem;
   height: 2rem;
@@ -483,9 +482,10 @@ button {
   flex-direction: row; 
   display:flex;
   align-items: center;
+}
   
 .colorWhite {
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 /* media queries responsive étou */
@@ -532,4 +532,4 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
-  
+}
