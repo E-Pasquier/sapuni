@@ -40,15 +40,15 @@
       <h2>Nous contacter</h2>
 
       <form>
-        <label for="name">
+        <label class="formFlex formWidth" for="name">
           <input placeholder="Nom & prénom" type="text" name="name" id="name" />
         </label>
 
-        <label for="email">
+        <label class="formFlex formWidth" for="email">
           <input placeholder="Email" type="text" name="email" id="email" />
         </label>
 
-        <label for="selectSubject">
+        <label class="formFlex formWidth" for="selectSubject">
           <select class="selectContact" name="subject" id="selectSubject">
             <option value="Je souhaite rejoindre SAPUNI">
               Je souhaite rejoindre SAPUNI</option>
@@ -61,17 +61,11 @@
           </select>
         </label>
 
-        <label for="message">
-          <textarea
-            placeholder="Votre message"
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-          ></textarea>
+        <label class="formFlex formWidth" for="message">
+          <textarea placeholder="Votre message" name="message" id="message" cols="30" rows="10"></textarea>
         </label>
 
-        <button type ="submit">Envoyer</button>
+        <button class="buttonForm" type ="submit">Envoyer</button>
       </form>
     </section>
 
