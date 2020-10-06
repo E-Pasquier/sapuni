@@ -304,7 +304,7 @@ textarea,
   display: inline-block;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   width: 100px;
   margin-left: 5px;
   box-shadow: 1px 1px 1px #a8d0db;
@@ -493,4 +493,25 @@ button {
     display: block;
   }
 
+}
+
+.contact {
+  color: #A6BBDD;
+  font-family: Montserrat; 
+  border-radius: 1%;
+  margin: auto;
+}
+
+button[type=submit] {
+  
+}
+ 
+
+label, input, textarea {
+  margin:auto;
+  padding: auto;
+}
+
+iframe {
+  justify-content: center;
 }
