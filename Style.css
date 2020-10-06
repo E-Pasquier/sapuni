@@ -1,41 +1,101 @@
+/* Refacto */
+
+
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("fonts/Montserrat-Bold.ttf");
-}
-
-@font-face {
   font-family: "Montserrat";
   src: url("fonts/Montserrat-Light.ttf");
-}
-
-@font-face {
   font-family: "Ailerons";
   src: url("fonts/Ailerons-Regular.otf");
 }
 
 body {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  color: #535150;
+}
+
+.article, p:first-of-type,span,h1,h2,h3 {
+  font-family: "Montserrat-Bold";
+}
+
+.p,
+body {
   font-family: "Montserrat";
+}
+
+h1,h2 {
+  margin-left: 3em;
+  padding-left: 3em;
+}
+
+.inscriptionButton, .cardTitle, .cardExcerpt, .citation, .article h1, .article1, .listIndex, 
+.banner-title, iframe {
+  text-align : center;
+}
+
+
+.menu-header {
+  align-items: center;
+}
+
+.inscriptionButton, .card, .cardAuteur  {
+  background-color: #a6bbdd;
+}
+
+footer,header, button {
+  background-color: #2b4570;
+}
+
+.bottom {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.bar, body { 
+  background-color: #ffffff;
+} 
+
+form, .bannerArticle, .cardAuteur, .cards, .cardAuteur {
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+.listIndex, .selectbutton {
+  margin: auto;
+}
+
+.cards, .blockIndex, ul.banner-articles, form, .liste, .blockliens, ul.block,
+.lienfooter, footer, .card  {
+  display: flex;
+}
+.listeliens, .cards, .lienfooter  {
+  flex-wrap: wrap;
+} 
+
+.bannerArticle, .bar, .change {
+  display: block;
+}
+
+/* Refacto */
+
+body { 
+  color: #535150;
   margin-left: 7em;
   margin-right: 7em;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Montserrat-Bold";
-}
-
 footer,
 header {
-  background-color: #2b4570;
   color: #ffffff;
 }
 
-.menu-header {
+.menu-header, ul.banner-articles, .menu-header li, ul.block, .listeliens,
+.blockIndex, .listIndex {
   list-style: none;
 }
 
@@ -43,24 +103,13 @@ header {
   font-family: "Ailerons";
 }
 
-
-
-html,
-body {
+html,body {
   margin: 0;
   padding: 0;
 }
 
 .displayNone {
   display: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.colorWhite {
-  color: white;
 }
 
 .logo {
@@ -73,52 +122,33 @@ a {
 }
 
 p {
-  font-family: "Montserrat";
   text-align: justify;
   padding-left: 5%;
   padding-right: 5%;
 }
-h1 h2{
-  margin-left: 3em;
-  padding-left: 3em;
-}
-
-span {
-  font-family: "Montserrat-Bold";
-}
 
 .inscriptionButton {
-  background-color: #A6BBDD;
-  text-align: center #2b4570;
   width: 100%;
   height: 4rem;
 }
 
-
 /* c'est le code des cartes index */
 
 .cards {
-  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .card {
   width: 10rem;
   height: 14rem;
-  background-color: #A6BBDD;
   box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
-  display: flex;
   margin: 2rem;
   padding-bottom: 1rem;
-
 }
 
-.cardTitle,
-.cardExcerpt {
-  text-align: center;
+.cardTitle,.cardExcerpt {
   text-transform: uppercase;
   color: white;
 }
@@ -126,8 +156,8 @@ span {
 .cardImage {
   width: 60%;
   height: 45%;
-  overflow:hidden;
-  border-radius:100%;
+  overflow: hidden;
+  border-radius: 100%;
   margin-left: 2rem;
   margin-top: 0.5rem;
   border: 2px solid white;
@@ -142,7 +172,6 @@ span {
 
 .citation {
   font-style: oblique;
-  text-align: center;
 }
 
 hr {
@@ -150,32 +179,19 @@ hr {
   color: #d5b544;
 }
 
-.article p:first-of-type {
-  font-style: "Montserrat-Bold";
-}
-
-.article h1 {
-  text-align: center;
-}
 
 .article1 {
-  text-align: center;
   width: 35rem;
 }
 
 .bannerArticle {
   width: 80%;
   height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Form */
 
 form {
-  margin-left: auto;
-  margin-right: auto;
   display: inline-block;
 }
 
@@ -210,8 +226,6 @@ input[type="submit"] {
 .bar {
   height: 5px;
   width: 100%;
-  background-color: #ffffff;
-  display: block;
   border-radius: 5px;
 }
 
@@ -264,12 +278,9 @@ input[type="submit"] {
 .cardAuteur {
   width: 25rem;
   padding: 3rem;
-  background-color: #A6BBDD;
   border-radius: 1%;
   margin-top: 10rem;
   margin-bottom: 5rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #selectAuthor {
@@ -280,43 +291,34 @@ input[type="submit"] {
 .cardAuteurImg {
   width: 60%;
   height: 14rem;
-  overflow:hidden;
-  border-radius:100%;
+  overflow: hidden;
+  border-radius: 100%;
   border: 24px solid white;
   margin-left: 3.5rem;
 }
 
-.test {
+.cardElement {
   margin-top: -10rem;
   padding-top: 2rem;
-  
 }
-
 
 /* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTTTEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRR !! */
 
 footer {
-  background-color: #2b4570;
-  display: flex;
   width: 100%;
   /*justify-content: space-between;*/
 }
 
 ul.block {
-  display: flex;
-  list-style: none;
   padding: 0;
   align-items: center;
   align-content: center;
-  width:100%;
-  justify-content: flex-end;
-  
-}
-.liensociaux{
   width: 100%;
-  display: flex;
+  justify-content: flex-end;
+}
+.liensociaux {
+  width: 100%;
   max-width: 450px;
-  
 }
 
 .liste {
@@ -334,9 +336,7 @@ ul.block {
 }
 
 .lienfooter {
-  display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   width: 100%;
   max-width: 600px;
   margin: auto;
@@ -345,24 +345,18 @@ ul.block {
 
 .listeliens {
   display: inline-flex;
-  flex-wrap: wrap;
-  list-style: none;
   padding: auto;
   align-items: center;
   color: ghostwhite;
 }
 .blockliens {
-  display: flex;
   width: 50%;
   align-content: space-between;
 }
 
-
-
 button {
   width: 1rem;
   height: 2rem;
-  background-color: #2b4570;
   color: white;
   box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
@@ -373,43 +367,35 @@ button {
 }
 
 .liste {
-  flex-direction: row; 
-  display:flex;
+  flex-direction: row;
   align-items: center;
 }
 
 /*------------- (First n second title/paragraph on Index)-----------*/
-body *{
+body * {
   padding: 0;
 }
 
-.blockIndex{
-  
-  display: flex;
+.blockIndex {
   flex-direction: column;
   align-items: center;
-  list-style: none;
 }
 
-.listIndex{
-  list-style: none;
+.listIndex {
   width: 80%;
-  text-align: center;
-  margin: auto;                
 }
 
 /*------------- (First n second title/paragraph on Index)-----------*/
 
 /*------------- (BANNER CHATPINGOUIN)-----------*/
-.chatpingouin{
+.chatpingouin {
   width: 100%;
 }
 
 /*------------- (BANNER CHATPINGOUIN)-----------*/
 
 /*------------- (order selection button on articles page)-----------*/
-.selectbutton{
-  margin: auto;
+.selectbutton {
   width: 100%;
   max-width: 155px;
   padding-top: 1rem;
@@ -417,116 +403,40 @@ body *{
 
 /*------------- (order selection button on articles page)-----------*/
 
-
-
-/*------------- (Title on Banner articles page)-----------*/ 
-ul.banner-articles{
-  display: flex;
+/*------------- (Title on Banner articles page)-----------*/
+ul.banner-articles {
   flex-direction: column;
   align-items: center;
-  list-style: none;
   margin-left: 0;
   padding: 0;
 }
 
-.banner-title1{
+.banner-title {
   position: relative;
-  text-align: center;
   width: 100%;
   max-width: 600px;
   min-width: 320px;
 }
 
-.banner-title2{
-  position: relative;
-  text-align: center;
+.article {
   width: 100%;
   max-width: 600px;
-  min-width: 320px;
+  height: auto;
 }
 
-.banner-title3{
-  position: relative;
-  text-align: center;
+.banner-image {
   width: 100%;
-  max-width: 600px;
-  min-width: 320px;
-}
-
-.article01{
-  width : 100%;
-  max-width: 600px;
   height: auto;
 }
 
-.article02{
-  width : 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-.article03{
-  width : 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-
-.bottom01 {
-  background-color: #a8d0db;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  max-width: 600px;
-  width: 100%;
-}
-
-.bottom02 {
-  background-color: #a8d0db;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  max-width: 600px; 
-  width: 100%;
-}
-
-.bottom03 {
-  background-color: #a8d0db;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  max-width: 600px; 
-  width: 100%;
-}
-
-.banner-image01{
-  width : 100%;
-  height: auto;
-}
-
-.banner-image02{
-  width : 100%;
-  height: auto;
-}
-
-.banner-image03{
-  width : 100%;
-  height: auto;
-}
-
-
-/*------------- (Title on Banner articles page)-----------*/ 
+/*------------- (Title on Banner articles page)-----------*/
 form {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .formFlex {
-  display: flex;
   padding: 0.5rem;
 }
 
@@ -543,114 +453,22 @@ form {
 
 iframe {
   width: 70%;
-  text-align: center;
   margin-bottom: 6rem;
   margin-left: 15%;
 }
 
-/* media queries responsive étou */
 
-@media screen and (min-width: 768px) { /*768px taille standard pour les desktop */
-  #menu {
-    display: none;
-  }
-  .menu-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-  }
-
-  .linkMenu {
-    display: flex;
-    margin-right: 3rem;
-    font-size: 4rem;
-  }
-
-  .logo {
-    float: left;
-    margin-left: 1rem;
-  }
-
-  .cardCollector {
-    display: block;
-    width: 13rem;
-    box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
-  }
-
-  .cards {
-    width: 60rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .card {
-    width: 13rem;
-    height: 13rem;
-    display: flex;
-    margin: 2rem;
-    padding-bottom: 1rem;
-  
-  }
-
-  .cardImage {
-    width: 60%;
-    height: 60%;
-    margin-left: 2.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .cardAuteur {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .cards {
-    width: 60rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 3rem;
-  }
-
-  .cardAuteur {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .formWidth {
-    width: 50rem;
-  }
-}
- 
-
-  
 /*------------- (First n second title/paragraph on Index)-----------*/
-body *{
-  padding: 0;
-}
 
-
-.blockIndex{
-  
-  display: flex;
+.blockIndex {
   flex-direction: column;
   align-items: center;
   list-style: none;
 }
 
-.listIndex{
+.listIndex {
   list-style: none;
   width: 80%;
-  text-align: center;
-  margin: auto;                
 }
 
 /*------------- (First n second title/paragraph on Index)-----------*/
@@ -659,6 +477,75 @@ body *{
   max-width: 100%;
 }
 
-.derniersArticles{
+.derniersArticles {
   padding-top: 2rem;
 }
+
+
+  /* NE PAS TOUCHER
+  NE PAS TOUCHER
+  NE PAS TOUCHER
+  NE PAS TOUCHER
+  NE PAS TOUCHER
+  media queries responsive étou */
+  
+  @media screen and (min-width: 768px) {
+    /*768px taille standard pour les desktop */
+   
+    .menu-header, .linkMenu, .cards, .card, {
+      display: flex; 
+    }
+     
+    .menu-header, .cards, .card {
+      flex-direction: row;
+    }
+    
+    #menu {
+      display: none;
+    }
+    .menu-header {
+      justify-content: end;
+      align-items: center;
+    }
+  
+    .linkMenu {
+      margin-right: 3rem;
+      font-size: 4rem;
+    }
+  
+    .logo {
+      float: left;
+      margin-left: 1rem;
+    }
+  
+    .cardCollector {
+      display: block;
+      width: 13rem;
+      box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
+    }
+  
+    .cards {
+      width: 60rem;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-bottom: 3rem;
+    }
+  
+    .card {
+      width: 13rem;
+      height: 13rem;
+      margin: 2rem;
+      padding-bottom: 1rem;
+    }
+  
+    .cardImage {
+      width: 60%;
+      height: 60%;
+      margin-left: 2.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    .formWidth {
+      width: 50rem;
+    }
+  }
