@@ -592,16 +592,17 @@ iframe {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .formWidth {
+    width: 50rem;
+  }
+}
  
 
   
 /*------------- (First n second title/paragraph on Index)-----------*/
 body *{
   padding: 0;
-}
-
-.formWidth {
-  width: 50rem;
 }
 
 
@@ -623,7 +624,7 @@ body *{
 /*------------- (First n second title/paragraph on Index)-----------*/
 /*------------- (BANNER CHATPINGOUIN)-----------*/
 .chatpingouin {
-  width: 100%;
+  max-width: 100%;
 }
 
 .derniersArticles{
