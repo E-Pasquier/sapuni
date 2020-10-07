@@ -15,36 +15,36 @@ body {
   flex-direction: column;
 }
 
-.article, p:first-of-type,span,h1,h2,h3, h4 {
-  font-family: "Montserrat-Bold";
-}
 
-.p,
+p,
 body {
   font-family: "Montserrat";
 }
 
-h1,h2 {
-  margin-left: 3em;
-  padding-left: 3em;
-}
-
-.inscriptionButton, .cardTitle, .cardExcerpt, .citation, .article h1, .article1, .listIndex, 
-.banner-title, iframe {
+.textCenter {
   text-align : center;
 }
 
-
-.menu-header {
-  align-items: center;
+.montserratBold, 
+span {
+  font-family: "Montserrat-Bold";
 }
 
-.inscriptionButton, .card, .cardAuteur  {
+.whiteBlueBG {
   background-color: #a6bbdd;
 }
 
-footer,header, button {
+.blueBG {
   background-color: #2b4570;
+}
+
+/* h1,h2 {
+  margin-left: 3em;
+  padding-left: 3em;
+} */
+
+.menu-header {
+  align-items: center;
 }
 
 .bottom {
@@ -191,7 +191,7 @@ hr {
 }
 
 
-.article1 {
+.article {
   width: 35rem;
 }
 
