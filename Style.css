@@ -15,6 +15,7 @@ body {
   flex-direction: column;
 }
 
+
 p,
 body {
   font-family: "Montserrat";
@@ -59,7 +60,7 @@ span {
   background-color: #ffffff;
 } 
 
-form, .bannerArticle, .cardAuteur, .cards, .cardAuteur {
+form, .bannerArticle, .cardAuteur, .cards {
   margin-left: auto;
   margin-right: auto;
 }  
@@ -80,7 +81,18 @@ form, .bannerArticle, .cardAuteur, .cards, .cardAuteur {
   display: block;
 }
 
+
 /* Refacto */
+
+
+/* header fixé en haut quand on scroll */
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+/* fin header fixé */
 
 body { 
   color: #535150;
@@ -273,18 +285,25 @@ input[type="submit"] {
   display: block;
 }
 
-/* PAGE AUTEUR AVEC LES CARDS ET TOUT C LEA QUI FAIT ON TOUCHE PAS MERCI LES BG */
+/* PAGE AUTEUR */
+.cardAuteurContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
 .cardAuteur {
   width: 25rem;
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 1%;
   margin-top: 10rem;
-  margin-bottom: 5rem;
 }
 
 #selectAuthor {
   float: right;
-  margin: 2rem;
+  margin: 5rem;
 }
 
 .cardAuteurImg {
@@ -301,6 +320,45 @@ input[type="submit"] {
   padding-top: 2rem;
 }
 
+.center {
+  text-align: center;
+}
+
+.cardAuteurList {
+  list-style-type: none;
+  font-style: oblique;
+}
+
+.containerListAuteur {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.LouiseMeTuePasStp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.encoreUnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.jpp {
+  width: 1.5rem;
+  margin: 0.2rem;
+}
+
+.marionVaMeTuer {
+  font-size: 1rem;
+  font-style: oblique;
+  margin-left: 0.4rem;
+}
 /* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTTTEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRR !! */
 
 footer {
@@ -488,26 +546,20 @@ iframe {
   NE PAS TOUCHER
   media queries responsive étou */
   
-  @media screen and (min-width: 768px) {
-    /*768px taille standard pour les desktop */
-   
-    .menu-header, .linkMenu, .cards, .card, {
-      display: flex; 
-    }
-     
-    .menu-header, .cards, .card {
-      flex-direction: row;
-    }
-    
+  @media screen and (min-width: 768px) { /*768px taille standard pour les desktop */
     #menu {
       display: none;
     }
+
     .menu-header {
+      display: flex;
+      flex-direction: row;
       justify-content: end;
       align-items: center;
     }
   
     .linkMenu {
+      display: flex;
       margin-right: 3rem;
       font-size: 4rem;
     }
@@ -525,16 +577,22 @@ iframe {
   
     .cards {
       width: 60rem;
+      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      margin-left: auto;
+      margin-right: auto;
       padding-bottom: 3rem;
     }
-  
+
     .card {
       width: 13rem;
       height: 13rem;
+      display: flex;
       margin: 2rem;
       padding-bottom: 1rem;
+    
     }
   
     .cardImage {
@@ -544,7 +602,21 @@ iframe {
       margin-top: 0.5rem;
     }
   
+    .cardAuteur {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
     .formWidth {
       width: 50rem;
     }
+
+    .displayNoneDesktop {
+      display: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
