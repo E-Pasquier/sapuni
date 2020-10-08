@@ -86,10 +86,7 @@ form, .bannerArticle, .cardAuteur, .cards {
 
 /* header fixé en haut quand on scroll */
 
-header {
-  position: fixed;
-  width: 100%;
-}
+
 
 /* fin header fixé */
 
@@ -197,6 +194,30 @@ hr {
 .bannerArticle {
   width: 80%;
   height: auto;
+}
+
+/*like button */
+
+.likeButton, .likeButton2, .likeButton3 {
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
+  border-radius: 100%;
+}
+
+.likeButton i, .likeButton2 i, .likeButton3 i {
+  font-size: 2rem;
+  transition: 0.4s;
+}
+
+i:hover {
+  color: #2b4570;
+  cursor: pointer;
+}
+
+.fas {
+  color: #2b4570;
+  transition: 0.4s;
 }
 
 /* Form */
