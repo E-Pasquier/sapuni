@@ -80,6 +80,11 @@ form, .bannerArticle, .cardAuteur, .cards {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 
 /* Refacto */
 
