@@ -15,7 +15,6 @@ body {
   flex-direction: column;
 }
 
-
 p,
 body {
   font-family: "Montserrat";
@@ -558,86 +557,3 @@ iframe {
 .derniersArticles {
   padding-top: 2rem;
 }
-
-
-  /* NE PAS TOUCHER
-  NE PAS TOUCHER
-  NE PAS TOUCHER
-  NE PAS TOUCHER
-  NE PAS TOUCHER
-  media queries responsive étou */
-  
-  @media screen and (min-width: 768px) { /*768px taille standard pour les desktop */
-    #menu {
-      display: none;
-    }
-
-    .menu-header {
-      display: flex;
-      flex-direction: row;
-      justify-content: end;
-      align-items: center;
-    }
-  
-    .linkMenu {
-      display: flex;
-      margin-right: 3rem;
-      font-size: 4rem;
-    }
-  
-    .logo {
-      float: left;
-      margin-left: 1rem;
-    }
-  
-    .cardCollector {
-      display: block;
-      width: 13rem;
-      box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
-    }
-  
-    .cards {
-      width: 60rem;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin-left: auto;
-      margin-right: auto;
-      padding-bottom: 3rem;
-    }
-
-    .card {
-      width: 13rem;
-      height: 13rem;
-      display: flex;
-      margin: 2rem;
-      padding-bottom: 1rem;
-    
-    }
-  
-    .cardImage {
-      width: 60%;
-      height: 60%;
-      margin-left: 2.5rem;
-      margin-top: 0.5rem;
-    }
-  
-    .cardAuteur {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .formWidth {
-      width: 50rem;
-    }
-
-    .displayNoneDesktop {
-      display: none;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
