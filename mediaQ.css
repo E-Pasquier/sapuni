@@ -74,4 +74,12 @@
     .displayNoneDesktop {
       display: none;
     }
+
+    .article {
+      transition: 0.2s;
+    }
+
+    .article:hover {
+      opacity: 0.6;
+    }
   }
