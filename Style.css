@@ -10,19 +10,25 @@
   src: url("fonts/Ailerons-Regular.otf");
 }
 
-/* :root {
-      --padding-big: 5 rem;
-      --padding-medium: 3 rem; 
-      --padding-mini: 1rem;
-      --img-big: 100%;
-      --img-card: width:60%, height:60%;
-      --icons-footer: 40%;
+:root {
+  --padding-big: 5 rem;
+  --padding-medium: 3 rem; 
+  --padding-mini: 1rem;
+  --img-big: 100%;
+  --img-card: width:60%, height:60%;
+  --icons-footer: 40%;
+}
 
-  à inclure : var(--padding-big);
-*/
+.bouge {
+  margin: 3rem;
+  list-style-type: none;
+}
 
+.bougespan {
+  font-weight: bold;
+}
 
-body {
+header {
   display: flex;
   flex-direction: column;
 }
@@ -36,8 +42,7 @@ body {
   text-align : center;
 }
 
-.montserratBold, 
-span {
+.montserratBold {
   font-family: "Montserrat-Bold";
 }
 
@@ -92,10 +97,15 @@ form, .bannerArticle, .cardAuteur, .cards {
   display: block;
 }
 
-a {
-  text-decoration: none;
+.colorWhite {
   color: white;
 }
+
+a {
+  color: #535150;
+}
+
+
 
 
 /* Refacto */
@@ -424,8 +434,8 @@ ul.block {
 
 .icone {
   /* height: auto;*/
-  width: 1rem;
-  height: 1rem;
+  width: 3rem;
+  height: 3rem;
   justify-content: space-around;
 }
 
