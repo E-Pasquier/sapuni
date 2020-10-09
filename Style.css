@@ -259,14 +259,28 @@ textarea,
   padding: 3px;
   border: 1px solid #a8d0db;
   border-radius: 5px;
-  width: 80%;
+  width: 100%;
   display: inline-block;
 }
 
+.containerForm {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#submit-button2 {
+  float: left;
+  margin-top: 1rem;
+  margin-left: 25rem;
+  width: 7rem;
+  background-color: #2b4570;
+}
+
 button[type="submit"] {
-  width: 100px;
-  margin-left: 5px;
-  box-shadow: 1px 1px 1px #a8d0db;
+  float: left;
+  width: 7rem;
+  margin-top: 1px;
+  margin-left: 25rem;
   cursor: pointer;
 }
 
@@ -465,6 +479,10 @@ button {
   box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
 }
+.grayLien {
+  color: gray;
+  text-decoration: underline;
+}
 
 .imageCarrousel {
   width: 100%;
@@ -541,19 +559,19 @@ form {
 }
 
 .formFlex {
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .formWidth {
   width: 30rem;
 }
 
-.buttonForm {
+/*.buttonForm {
   float: right;
   margin-top: 1rem;
   margin-left: 25rem;
   width: 7rem;
-}
+}*/
 
 iframe {
   width: 70%;
@@ -583,4 +601,14 @@ iframe {
 
 .derniersArticles {
   padding-top: 2rem;
+}
+
+/* LIVRE D'OR PAPA ! */
+
+#messages2 {
+width: 100%;
+}
+
+#name-input {
+ width: 100%;
 }

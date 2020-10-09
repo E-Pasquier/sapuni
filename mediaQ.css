@@ -75,11 +75,14 @@
       display: none;
     }
 
-    .article {
+    .articlePreview {
       transition: 0.2s;
     }
 
-    .article:hover {
+    .articlePreview:hover {
+      opacity: 0.6;
+    }
+    .derniersArticles:hover {
       opacity: 0.6;
       cursor: pointer;
     }
