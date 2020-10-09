@@ -1,168 +1,113 @@
-/* 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/* Refacto */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}ouvrir lien nouvelle fenetre html
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-*/
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("fonts/Montserrat-Bold.ttf");
-}
-
-@font-face {
   font-family: "Montserrat";
   src: url("fonts/Montserrat-Light.ttf");
-}
-
-@font-face {
   font-family: "Ailerons";
   src: url("fonts/Ailerons-Regular.otf");
 }
 
+/* :root {
+      --padding-big: 5 rem;
+      --padding-medium: 3 rem; 
+      --padding-mini: 1rem;
+      --img-big: 100%;
+      --img-card: width:60%, height:60%;
+      --icons-footer: 40%;
+
+  à inclure : var(--padding-big);
+*/
+
+
 body {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  color: #535150;
+}
+
+.article, p:first-of-type,span,h1,h2,h3 {
+  font-family: "Montserrat-Bold";
+}
+
+.p,
+body {
   font-family: "Montserrat";
+}
+
+h1,h2 {
+  margin-left: 3em;
+  padding-left: 3em;
+}
+
+.inscriptionButton, .cardTitle, .cardExcerpt, .citation, .article h1, .article1, .listIndex, 
+.banner-title, iframe {
+  text-align : center;
+}
+
+
+.menu-header {
+  align-items: center;
+}
+
+.inscriptionButton, .card, .cardAuteur  {
+  background-color: #a6bbdd;
+}
+
+footer,header, button {
+  background-color: #2b4570;
+}
+
+.bottom {
+  background-color: #a8d0db;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.bar, body { 
+  background-color: #ffffff;
+} 
+
+form, .bannerArticle, .cardAuteur, .cards, .cardAuteur {
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+.listIndex, .selectbutton {
+  margin: auto;
+}
+
+.cards, .blockIndex, ul.banner-articles, form, .liste, .blockliens, ul.block,
+.lienfooter, footer, .card  {
+  display: flex;
+}
+.listeliens, .cards, .lienfooter  {
+  flex-wrap: wrap;
+} 
+
+.bannerArticle, .bar, .change {
+  display: block;
+}
+
+/* Refacto */
+
+body { 
+  color: #535150;
   margin-left: 7em;
   margin-right: 7em;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Montserrat-Bold";
-}
-
 footer,
 header {
-  background-color: #2b4570;
   color: #ffffff;
 }
 
-.menu-header {
+.menu-header, ul.banner-articles, .menu-header li, ul.block, .listeliens,
+.blockIndex, .listIndex {
   list-style: none;
 }
 
@@ -170,26 +115,13 @@ header {
   font-family: "Ailerons";
 }
 
-header h1 {
-  margin: 0;
-}
-
-html,
-body {
+html,body {
   margin: 0;
   padding: 0;
 }
 
 .displayNone {
   display: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.colorWhite {
-  color: white;
 }
 
 .logo {
@@ -202,62 +134,56 @@ a {
 }
 
 p {
-  font-family: "Montserrat";
   text-align: justify;
-}
-
-span {
-  font-family: "Montserrat-Bold";
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .inscriptionButton {
-  background-color: #A6BBDD;
-  text-align: center #2b4570;
   width: 100%;
   height: 4rem;
 }
 
-
 /* c'est le code des cartes index */
 
 .cards {
-  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .card {
-  width: 13rem;
-  height: 13rem;
-  background-color: #A6BBDD;
+  width: 10rem;
+  height: 14rem;
   box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
-  display: flex;
   margin: 2rem;
   padding-bottom: 1rem;
-
 }
 
-.cardTitle,
-.cardExcerpt {
-  text-align: center;
+.cardTitle,.cardExcerpt {
   text-transform: uppercase;
   color: white;
 }
 
 .cardImage {
   width: 60%;
-  height: 60%;
-  overflow:hidden;
-  border-radius:100%;
+  height: 45%;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  border: 2px solid white;
+}
+
+.cardCollector {
+  display: none;
+  margin-top: -0.8rem;
 }
 
 /* Mise en page relative aux articles */
 
 .citation {
   font-style: oblique;
-  text-align: center;
 }
 
 hr {
@@ -265,32 +191,19 @@ hr {
   color: #d5b544;
 }
 
-.article p:first-of-type {
-  font-style: "Montserrat-Bold";
-}
-
-.article h1 {
-  text-align: center;
-}
 
 .article1 {
-  text-align: center;
   width: 35rem;
 }
 
 .bannerArticle {
   width: 80%;
   height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Form */
 
 form {
-  margin-left: auto;
-  margin-right: auto;
   display: inline-block;
 }
 
@@ -325,8 +238,6 @@ button[type="submit"] {
 .bar {
   height: 5px;
   width: 100%;
-  background-color: #ffffff;
-  display: block;
   border-radius: 5px;
 }
 
@@ -376,10 +287,12 @@ button[type="submit"] {
 }
 
 /* PAGE AUTEUR AVEC LES CARDS ET TOUT C LEA QUI FAIT ON TOUCHE PAS MERCI LES BG */
-
 .cardAuteur {
   width: 25rem;
-  padding: 6rem
+  padding: 3rem;
+  border-radius: 1%;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 #selectAuthor {
@@ -387,28 +300,44 @@ button[type="submit"] {
   margin: 2rem;
 }
 
+.cardAuteurImg {
+  width: 60%;
+  height: 14rem;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 24px solid white;
+  margin-left: 3.5rem;
+}
+
+.cardElement {
+  margin-top: -10rem;
+  padding-top: 2rem;
+}
 
 /* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTTTEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRR !! */
 
 footer {
-  background-color: #2b4570;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
-.block {
-  display: flex;
-  
-  list-style: none;
+ul.block {
   padding: 0;
   align-items: center;
   align-content: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+.liensociaux {
+  width: 100%;
+  max-width: 450px;
 }
 
 .liste {
   margin: 10px;
   color: ghostwhite;
+  width: 4rem;
+  margin-right: 0.3rem;
 }
 
 .icone {
@@ -419,34 +348,27 @@ footer {
 }
 
 .lienfooter {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
-  margin: 0;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
 }
 
 .listeliens {
   display: inline-flex;
-  flex-wrap: wrap;
-  list-style: none;
   padding: auto;
   align-items: center;
   color: ghostwhite;
 }
 .blockliens {
-  display: flex;
   width: 50%;
   align-content: space-between;
 }
 
-
-
-}
 button {
   width: 1rem;
   height: 2rem;
-  background-color: #2b4570;
   color: white;
   box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
@@ -457,61 +379,185 @@ button {
 }
 
 .liste {
-  flex-direction: row; 
-  display:flex;
+  flex-direction: row;
   align-items: center;
-  
-.colorWhite {
-  font-size: 0.8em;
 }
 
-/* media queries responsive étou */
-
-@media screen and (min-width: 768px) { /*768px taille standard pour les desktop */
-  #menu {
-    display: none;
-  }
-  .menu-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-  }
-
-  .linkMenu {
-    display: flex;
-    margin-right: 3rem;
-    font-size: 4rem;
-  }
-
-  .logo {
-    float: left;
-    margin-left: 1rem;
-  }
-
-  .displayNone {
-    display: block;
-  }
-
+/*------------- (First n second title/paragraph on Index)-----------*/
+body * {
+  padding: 0;
 }
 
-.contact {
-  color: #A6BBDD;
-  font-family: Montserrat; 
-  border-radius: 1%;
-  margin: auto;
+.blockIndex {
+  flex-direction: column;
+  align-items: center;
 }
 
-button[type=submit] {
-  
+.listIndex {
+  width: 80%;
 }
- 
 
-label, input, textarea {
-  margin:auto;
-  padding: auto;
+/*------------- (First n second title/paragraph on Index)-----------*/
+
+/*------------- (BANNER CHATPINGOUIN)-----------*/
+.chatpingouin {
+  width: 100%;
+}
+
+/*------------- (BANNER CHATPINGOUIN)-----------*/
+
+/*------------- (order selection button on articles page)-----------*/
+.selectbutton {
+  width: 100%;
+  max-width: 155px;
+  padding-top: 1rem;
+}
+
+/*------------- (order selection button on articles page)-----------*/
+
+/*------------- (Title on Banner articles page)-----------*/
+ul.banner-articles {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  padding: 0;
+}
+
+.banner-title {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+.article {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+/*------------- (Title on Banner articles page)-----------*/
+form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formFlex {
+  padding: 0.5rem;
+}
+
+.formWidth {
+  width: 30rem;
+}
+
+.buttonForm {
+  float: right;
+  margin-top: 1rem;
+  margin-left: 25rem;
+  width: 7rem;
 }
 
 iframe {
-  justify-content: center;
+  width: 70%;
+  margin-bottom: 6rem;
+  margin-left: 15%;
 }
+
+
+/*------------- (First n second title/paragraph on Index)-----------*/
+
+.blockIndex {
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.listIndex {
+  list-style: none;
+  width: 80%;
+}
+
+/*------------- (First n second title/paragraph on Index)-----------*/
+/*------------- (BANNER CHATPINGOUIN)-----------*/
+.chatpingouin {
+  max-width: 100%;
+}
+
+.derniersArticles {
+  padding-top: 2rem;
+}
+
+
+  /* NE PAS TOUCHER
+  NE PAS TOUCHER
+  NE PAS TOUCHER
+  NE PAS TOUCHER
+  NE PAS TOUCHER
+  media queries responsive étou */
+  
+  @media screen and (min-width: 768px) {
+    /*768px taille standard pour les desktop */
+   
+    .menu-header, .linkMenu, .cards, .card, {
+      display: flex; 
+    }
+     
+    .menu-header, .cards, .card {
+      flex-direction: row;
+    }
+    
+    #menu {
+      display: none;
+    }
+    .menu-header {
+      justify-content: end;
+      align-items: center;
+    }
+  
+    .linkMenu {
+      margin-right: 3rem;
+      font-size: 4rem;
+    }
+  
+    .logo {
+      float: left;
+      margin-left: 1rem;
+    }
+  
+    .cardCollector {
+      display: block;
+      width: 13rem;
+      box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
+    }
+  
+    .cards {
+      width: 60rem;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-bottom: 3rem;
+    }
+  
+    .card {
+      width: 13rem;
+      height: 13rem;
+      margin: 2rem;
+      padding-bottom: 1rem;
+    }
+  
+    .cardImage {
+      width: 60%;
+      height: 60%;
+      margin-left: 2.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    .formWidth {
+      width: 50rem;
+    }
+  }

@@ -10,7 +10,6 @@
 
 <header>
   <nav>
-
     <!-- menu burger -->
 
     <div id="menuBar">
@@ -22,72 +21,124 @@
         <div id="bar3" class="bar"></div>
       </div>
       <ul id="navMenu" class="menu-header">
-        <li class="linkMenu"><a class="colorWhite" href="Index.html">Home</a></li>
-        <li class="linkMenu"><a class="colorWhite" href="Articles.html">Articles</a></li>
-        <li class="linkMenu"><a class="colorWhite" href="Auteurs.html">Auteurs</a></li>
-        <li class="linkMenu"><a class="colorWhite" href="Contact.html">Contact</a></li>
+        <li class="linkMenu">
+          <a class="colorWhite" href="Index.html">Home |</a>
+        </li>
+        <li class="linkMenu">
+          <a class="colorWhite" href="Articles.html">Articles |</a>
+        </li>
+        <li class="linkMenu">
+          <a class="colorWhite" href="Auteurs.html">Auteurs |</a>
+        </li>
+        <li class="linkMenu">
+          <a class="colorWhite" href="Contact.html">Contact</a>
+        </li>
       </ul>
     </div>
-
-
   </nav>
 </header>
 
 <body>
-  <section class="form">
+  <section>
     <!-- formulaire de contaaaact-->
 
     <h2>Nous contacter</h2>
 
-    <form class="contact">
-      <label for="name">
+    <form>
+      <label class="formFlex formWidth" for="name">
         <input placeholder="Nom & prénom" type="text" name="name" id="name" />
       </label>
 
-      <label for="email">
+      <label class="formFlex formWidth" for="email">
         <input placeholder="Email" type="text" name="email" id="email" />
       </label>
 
-      <label for="selectSubject">
+      <label class="formFlex formWidth" for="selectSubject">
         <select class="selectContact" name="subject" id="selectSubject">
           <option value="Je souhaite rejoindre SAPUNI">
-            Je souhaite rejoindre SAPUNI</option>
+            Je souhaite rejoindre SAPUNI
+          </option>
           <option value="Je souhaite léguer mon patrimoine à SAPUNI">
-            Je souhaite léguer mon patrimoine à SAPUNI </option>
+            Je souhaite léguer mon patrimoine à SAPUNI
+          </option>
           <option value="Je souhaite confier, pour une durée indéterminée, mes enfants à SAPUNI">
-            Je souhaite confier, pour une durée indéterminée, mes enfants à SAPUNI </option>
+            Je souhaite confier, pour une durée indéterminée, mes enfants à
+            SAPUNI
+          </option>
           <option value="Je souhaite devenir le ou la neuvième partenaire platonique de Géo-Pinchat">
-            Je souhaite devenir le ou la neuvième partenaire platonique de Géo-Pinchat </option>
+            Je souhaite devenir le ou la neuvième partenaire platonique de
+            Géo-Pinchat
+          </option>
         </select>
       </label>
 
-      <label for="message">
+      <label class="formFlex formWidth" for="message">
         <textarea placeholder="Votre message" name="message" id="message" cols="30" rows="10"></textarea>
       </label>
 
-      <button type="submit">Envoyer</button>
+      <button class="buttonForm" type="submit" id="submit-button">Envoyer</button>
     </form>
   </section>
 
-  <section class="map">
+  <section>
+    <h2>Notre livre d'or</h2>
+
+    <form>
+      <label class="formFlex formWidth" for="name">
+        <input placeholder="Nom & prénom" type="text" name="name" id="name-input" />
+      </label>
+      <label class="formFlex formWidth" for="message">
+        <input name="message" id="message2" cols="30" rows="10"></input>
+      </label>
+      <button class="buttonForm" type="button" id="submit-button2">Envoyer</button>
+    </form>
+
+    <h2>Ils nous donnent de l'amour:</h2>
+    <ul id="comment-list">
+    </ul>
+  </section>
+
+  <section>
     <h2>Nous trouver</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26512.851955429513!2d-117.00722310347567!3d33.8353641625743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db67ff6394ee35%3A0x3b0a3475d2e73105!2sGilman%20Hot%20Springs%2C%20Californie%2092583%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1601459198095!5m2!1sfr!2sfr"
-      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      width="600" height="450" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </section>
+
+  <script src="Script.js"></script>
+
+
 </body>
 
 <footer>
-  <div class="lienFooter">
-    <a class="colorWhite" href="Contact.html">Contact</a>
-    <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
-    <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte
-      Données Personnelles</a>
+  <div class="blockliens">
+    <ul class="lienfooter">
+      <li class=listeliens>
+        <a class="colorWhite" href="Contact.html">Contact</a>
+      </li>
+      <li class=listeliens>
+        <a class="colorWhite" href="https://particuliers.societegenerale.fr/">Conditions Génerales</a>
+      </li>
+      <li class=listeliens>
+        <a class="colorWhite" href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Charte
+          données personnelles</a>
+      </li>
+      <ul>
   </div>
-  <div class="logoSociaux">
-    <a href="https//:www.twitter.fr" class="twitter"><img src="" alt="twitter" /></a>
-    <a href="https//:www.facebook.fr" class="facebook"><img src="" alt="facebook" /></a>
-    <a href="https//:www.instagram.fr" class="instagram"><img src="" alt="instagram" /></a>
-    <a href="https://www.leetchi.com/c/boiremangeraimer" class="leetchi"><img src="" alt="leetchi" /></a>
+  <div class="liensociaux">
+    <ul class="block">
+      <li class="liste">
+        <a href="https//:www.twitter.fr"><img class="icone" src="img/Fichier 1 copie.png" alt="twitter" /></a>
+      </li class="liste">
+      <li class="liste">
+        <a href="https//:www.facebook.fr"><img class="icone" src="img/Fichier 1.png" alt="facebook" /></a>
+      </li>
+      <li class="liste">
+        <a href="https//:www.instagram.fr"><img class="icone" src="img/instaFichier 1.png" alt="instagram" /></a>
+      </li>
+      <li class="liste">
+        <a href="https://www.leetchi.com/c/boiremangeraimer"><img src="img/cochonFichier 1.png" class="icone" alt="leetchi" /></a>
+      </li>
+    </ul>
   </div>
 </footer>
 
