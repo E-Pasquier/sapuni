@@ -574,3 +574,27 @@ iframe {
 .derniersArticles {
   padding-top: 2rem;
 }
+
+/* LIVRE D'OR PAPA ! */
+
+
+#submit-button2 {
+  float: right;
+  margin-top: 1rem;
+  margin-left: 25rem;
+  width: 7rem;
+}
+
+#comment-list {
+  border: #2b4570 solid 0,25rem;
+  width: 30 rem;
+}
+
+#messages2 {
+  width: 30rem;
+}
+
+#name-input {
+ width: 5rem;
+}
+
