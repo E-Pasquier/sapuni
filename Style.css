@@ -10,6 +10,18 @@
   src: url("fonts/Ailerons-Regular.otf");
 }
 
+/* :root {
+      --padding-big: 5 rem;
+      --padding-medium: 3 rem; 
+      --padding-mini: 1rem;
+      --img-big: 100%;
+      --img-card: width:60%, height:60%;
+      --icons-footer: 40%;
+
+  à inclure : var(--padding-big);
+*/
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -241,7 +253,7 @@ textarea,
   display: inline-block;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   width: 100px;
   margin-left: 5px;
   box-shadow: 1px 1px 1px #a8d0db;
@@ -561,4 +573,3 @@ iframe {
 
 .derniersArticles {
   padding-top: 2rem;
-}
