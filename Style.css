@@ -162,6 +162,7 @@ p {
 }
 
 .inscriptionButton {
+  cursor: pointer;
   width: 100%;
   height: 4rem;
 }
@@ -271,7 +272,6 @@ textarea,
 #submit-button2 {
   float: left;
   margin-top: 1rem;
-  margin-left: 25rem;
   width: 7rem;
   background-color: #2b4570;
 }
@@ -280,7 +280,6 @@ button[type="submit"] {
   float: left;
   width: 7rem;
   margin-top: 1px;
-  margin-left: 25rem;
   cursor: pointer;
 }
 
@@ -493,6 +492,32 @@ button {
   align-items: center;
 }
 
+/*---------------CAROUSEL---------------*/
+
+.body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.content{
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+}
+.content .images{
+  height: 100%;
+  width: 100%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
+}
+
 /*------------- (First n second title/paragraph on Index)-----------*/
 body * {
   padding: 0;
@@ -564,7 +589,7 @@ form {
 
 .formWidth {
   width: 30rem;
-}
+} 
 
 /*.buttonForm {
   float: right;
