@@ -27,36 +27,35 @@ body {
   flex-direction: column;
 }
 
-.article, p:first-of-type,span,h1,h2,h3 {
-  font-family: "Montserrat-Bold";
-}
-
-.p,
+p,
 body {
   font-family: "Montserrat";
 }
 
-h1,h2 {
-  margin-left: 3em;
-  padding-left: 3em;
-}
-
-.inscriptionButton, .cardTitle, .cardExcerpt, .citation, .article h1, .article1, .listIndex, 
-.banner-title, iframe {
+.textCenter {
   text-align : center;
 }
 
-
-.menu-header {
-  align-items: center;
+.montserratBold, 
+span {
+  font-family: "Montserrat-Bold";
 }
 
-.inscriptionButton, .card, .cardAuteur  {
+.whiteBlueBG {
   background-color: #a6bbdd;
 }
 
-footer,header, button {
+.blueBG {
   background-color: #2b4570;
+}
+
+/* h1,h2 {
+  margin-left: 3em;
+  padding-left: 3em;
+} */
+
+.menu-header {
+  align-items: center;
 }
 
 .bottom {
@@ -72,7 +71,7 @@ footer,header, button {
   background-color: #ffffff;
 } 
 
-form, .bannerArticle, .cardAuteur, .cards, .cardAuteur {
+form, .bannerArticle, .cardAuteur, .cards {
   margin-left: auto;
   margin-right: auto;
 }  
@@ -93,7 +92,20 @@ form, .bannerArticle, .cardAuteur, .cards, .cardAuteur {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
 /* Refacto */
+
+
+/* header fixé en haut quand on scroll */
+
+
+
+/* fin header fixé */
 
 body { 
   color: #535150;
@@ -192,13 +204,37 @@ hr {
 }
 
 
-.article1 {
+.article {
   width: 35rem;
 }
 
 .bannerArticle {
   width: 80%;
   height: auto;
+}
+
+/*like button */
+
+.likeButton, .likeButton2, .likeButton3 {
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
+  border-radius: 100%;
+}
+
+.likeButton i, .likeButton2 i, .likeButton3 i {
+  font-size: 2rem;
+  transition: 0.4s;
+}
+
+i:hover {
+  color: #2b4570;
+  cursor: pointer;
+}
+
+.fas {
+  color: #2b4570;
+  transition: 0.4s;
 }
 
 /* Form */
@@ -286,18 +322,25 @@ button[type="submit"] {
   display: block;
 }
 
-/* PAGE AUTEUR AVEC LES CARDS ET TOUT C LEA QUI FAIT ON TOUCHE PAS MERCI LES BG */
+/* PAGE AUTEUR */
+.cardAuteurContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
 .cardAuteur {
   width: 25rem;
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 1%;
   margin-top: 10rem;
-  margin-bottom: 5rem;
 }
 
 #selectAuthor {
   float: right;
-  margin: 2rem;
+  margin: 5rem;
 }
 
 .cardAuteurImg {
@@ -314,6 +357,45 @@ button[type="submit"] {
   padding-top: 2rem;
 }
 
+.center {
+  text-align: center;
+}
+
+.cardAuteurList {
+  list-style-type: none;
+  font-style: oblique;
+}
+
+.containerListAuteur {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.LouiseMeTuePasStp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.encoreUnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.jpp {
+  width: 1.5rem;
+  margin: 0.2rem;
+}
+
+.marionVaMeTuer {
+  font-size: 1rem;
+  font-style: oblique;
+  margin-left: 0.4rem;
+}
 /* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTTTEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRR !! */
 
 footer {
@@ -491,73 +573,3 @@ iframe {
 
 .derniersArticles {
   padding-top: 2rem;
-}
-
-
-  /* NE PAS TOUCHER
-  NE PAS TOUCHER
-  NE PAS TOUCHER
-  NE PAS TOUCHER
-  NE PAS TOUCHER
-  media queries responsive étou */
-  
-  @media screen and (min-width: 768px) {
-    /*768px taille standard pour les desktop */
-   
-    .menu-header, .linkMenu, .cards, .card, {
-      display: flex; 
-    }
-     
-    .menu-header, .cards, .card {
-      flex-direction: row;
-    }
-    
-    #menu {
-      display: none;
-    }
-    .menu-header {
-      justify-content: end;
-      align-items: center;
-    }
-  
-    .linkMenu {
-      margin-right: 3rem;
-      font-size: 4rem;
-    }
-  
-    .logo {
-      float: left;
-      margin-left: 1rem;
-    }
-  
-    .cardCollector {
-      display: block;
-      width: 13rem;
-      box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
-    }
-  
-    .cards {
-      width: 60rem;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding-bottom: 3rem;
-    }
-  
-    .card {
-      width: 13rem;
-      height: 13rem;
-      margin: 2rem;
-      padding-bottom: 1rem;
-    }
-  
-    .cardImage {
-      width: 60%;
-      height: 60%;
-      margin-left: 2.5rem;
-      margin-top: 0.5rem;
-    }
-  
-    .formWidth {
-      width: 50rem;
-    }
-  }
