@@ -455,6 +455,10 @@ button {
   box-shadow: 0.313rem 0.125rem 0.5rem #2b4570;
   border-radius: 1%;
 }
+.grayLien {
+  color: gray;
+  text-decoration: underline;
+}
 
 .imageCarrousel {
   width: 100%;
