@@ -529,7 +529,7 @@ ul.banner-articles {
 
 /*------------- (Title on Banner articles page)-----------*/
 form {
-  flex-direction: column;
+  flex-direction: column
   justify-content: center;
   align-items: center;
 }
@@ -587,11 +587,6 @@ iframe {
   margin-top: 1rem;
   margin-left: 25rem;
   width: 7rem;
-}
-
-#comment-list {
-  border: #2b4570 solid 0,25rem;
-  width: 30 rem;
 }
 
 #messages2 {
